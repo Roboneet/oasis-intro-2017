@@ -1,0 +1,119 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.loader_container
+{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  z-index: 1000;
+}
+.loader_element_one
+{
+  display: block;
+  position: relative;
+  top:50%;
+  left:50%;
+  height: 150px;
+  width: 150px;
+  margin:-80px 0px 0px -80px;
+  border:5px solid transparent;
+  border-top: 4px solid blue;
+  border-radius: 50%;
+  animation: spin 2s linear infinte;
+  -webkit-animation:spin 2s linear infinite;
+}
+.loader_element_one:before
+{
+  content: " ";
+  position: absolute;
+  top:5px;
+  left:5px;
+  right: 5px;
+  bottom: 5px;
+  border:5px solid transparent;
+  border-top: 4px solid red;
+  border-radius: 50%;
+  animation: spin 3s linear infinte;
+  -webkit-animation:spin 3s linear infinite;
+}
+.loader_element_one:after
+{
+  content: " ";
+  position: absolute;
+  top:15px;
+  left:15px;
+  right: 15px;
+  bottom: 15px;
+  border:5px solid transparent;
+  border-top: 4px solid yellow;
+  border-radius: 50%;
+  animation: spin 2.5s linear infinte;
+  -webkit-animation:spin 2.5s linear infinite;
+}
+.loader_element_two
+{
+  display: block;
+  position: absolute;
+  top:50%;
+  left:50%;
+  height: 150px;
+  width: 150px;
+  margin:-80px 0px 0px -80px;
+  border:5px solid transparent;
+  border-bottom:4px solid blue;
+  opacity: 0.5;
+  border-radius: 50%;
+  transform: rotate(60deg);
+  animation: spin 2s linear infinte;
+  -webkit-animation:spin_one 2s linear infinite;
+}
+.loader_element_two:after
+{
+  content: " ";
+  position: absolute;
+  top:15px;
+  left:15px;
+  right: 15px;
+  bottom: 15px;
+  border:5px solid transparent;
+  border-bottom: 4px solid yellow;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  animation: spin 2.5s linear infinte;
+  -webkit-animation:spin_one 2.5s linear infinite;
+}
+.loader_element_two:before
+{
+  content: " ";
+  position: absolute;
+  top:5px;
+  left:5px;
+  right: 5px;
+  bottom: 5px;
+  border:5px solid transparent;
+  border-bottom: 4px solid red;
+  border-radius: 50%;
+  animation: spin_one 3s linear infinte;
+  -webkit-animation:spin_one 3s linear infinite;
+}
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin_one{
+    0%{
+      transform: rotate(20deg);
+  }
+  100%{
+    transform: rotate(380deg);
+  }
+}
