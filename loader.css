@@ -70,7 +70,7 @@
   border-radius: 50%;
   transform: rotate(60deg);
   animation: spin 2s linear infinte;
-  -webkit-animation:spin_one 2s linear infinite;
+  -webkit-animation:spin_one 1s linear infinite;
 }
 .loader_element_two:after
 {
@@ -85,7 +85,7 @@
   border-radius: 50%;
   transform: rotate(0deg);
   animation: spin 2.5s linear infinte;
-  -webkit-animation:spin_one 2.5s linear infinite;
+  -webkit-animation:spin_one 2s linear infinite;
 }
 .loader_element_two:before
 {
@@ -103,17 +103,17 @@
 }
 @keyframes spin{
   0%{
-    transform: rotate(0deg);
+    transform: rotate(60deg);
   }
   100%{
-    transform: rotate(360deg);
+    transform: rotate(420deg);
   }
 }
 @keyframes spin_one{
     0%{
-      transform: rotate(20deg);
+      transform: rotate(0deg);
   }
   100%{
-    transform: rotate(380deg);
+    transform: rotate(-360deg);
   }
 }
