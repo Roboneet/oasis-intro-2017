@@ -1,0 +1,167 @@
+/**{
+	border: 1px solid yellow;
+}
+*/
+
+* {
+  -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background: #212121;
+}
+
+
+.left-tab{
+	position: fixed;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-color: #212121;
+	background-image:radial-gradient(yellow,#f06d06 );
+	width: 300px;
+}
+
+.navbar{
+	display: block;
+	margin: 70px auto;
+	//border: 2px solid black;
+	height: 150px;
+	width: 200px;
+}
+
+.nav1{
+	margin: 40px auto 0 auto;
+}
+
+.nav2{
+	margin: 0 auto 60px auto;
+}
+/*.nav1{
+	position: relative;
+	bottom: 80px;
+}
+.nav2{
+	position: relative;
+	top: -80px;
+}*/
+.col{
+	display: block;
+	margin: 10px auto;
+	text-align: center;
+	//font-family: 'Patrick Hand SC', cursive;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.4em;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+img{
+	max-width: 100%;
+	min-height: 100%;
+
+}
+
+.oasisimg{
+	height: 150px;
+	width: 200px;
+	//margin: 20px 20px 0 20px;
+	//margin-top: 20px;
+	margin-top:20px;
+	margin-left: 20px;
+}
+
+.mirage{
+	font-family: 'Montserrat', sans-serif;
+	height: 50px;
+	width: 250px;
+	font-size: 3.5em;
+	text-align: center;
+	display: block;
+	padding: 10px;
+	//margin: -60px auto;
+	margin: -20px auto 0 auto;
+}
+
+.social{
+	display: inline-block;
+	margin: 0 auto 60px 60px;
+}
+
+.media{
+	height: 40px;
+	width: 40px;
+}
+/*.mirage{
+	position: absolute;
+	height: 250px;
+	width: 250px;
+	margin : auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}*/
+
+.info{
+	display: none;
+}
+
+.container{
+	width: calc(100vw - 300px);
+	position: fixed;
+	right:0;
+	top:0;
+	bottom:0;
+	
+}
+
+.slider-container{
+	width:100%;
+	background-color: #eee;
+	height:100vh;
+	overflow-x: hidden;
+	
+}
+
+.slider{
+	height: 100vh;
+	display: inline-flex;
+	
+}
+
+.bar{
+	height: 100%;
+	width: 300px;
+	border: 1px solid #009688;
+	display: inline-block;
+	position: relative;
+}
+
+.button{
+	position: absolute;
+	bottom: 50px;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #dd2255;
+	left: 100px;
+}
+
+.left-tab{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.left-tab > div{
+	//height: 25%;
+	//border: 1px solid yellow;
+}
+
+
+
