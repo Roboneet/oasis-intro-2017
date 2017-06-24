@@ -1,0 +1,223 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.loader_container
+{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  z-index: 1000;
+}
+.box
+{ transform: rotate(-45deg);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  height:270px;
+  width:270px;
+  margin:-150px 0px 0px -150px;
+  /*background-color: red;*/
+
+}
+.box div
+{ border-radius: 5px;
+  height: 40px;
+  width: 40px;
+}
+.one
+{ background-color: red;
+  position: absolute;
+  /*background-color: red;*/
+  top:5px;
+  left: 5px;
+  -webkit-animation: one 2s linear infinite;
+  animation-delay: 1.75s;
+}
+.two
+{ background-color: blue;
+  position: absolute;
+  top:5px;
+  left:90px;
+  /*background-color: pink;*/
+  -webkit-animation: two 2s linear infinite;
+    animation-delay: 1.75s;
+}
+.three
+{background-color: yellow;
+position: absolute;
+top:90px;
+left:5px;
+/*background-color: orange;*/
+-webkit-animation: three 2s linear infinite;
+  animation-delay: 1.75s;
+}
+.four
+{ background-color: red;
+  opacity: 0.5;
+  position: absolute;
+  top:90px;
+  left:90px;
+  /*background-color: blue;*/
+  -webkit-animation: four 2s linear infinite;
+    animation-delay: 1s;
+}
+.five
+{ background-color: yellow;
+  opacity: 0.5;
+  position: absolute;
+  animation:five 2s linear infinite;
+  top:90px;
+  left:175px;
+  /*background-color: white;*/
+  -webkit-animation: five 2s linear infinite;
+  animation-delay: 1s;
+}
+.six
+{ background-color: blue;
+  opacity: 0.5;
+  position: absolute;
+  top:175px;
+  left:175px;
+  /*background-color: green;*/
+  animation:six  2s linear infinite;
+  -webkit-animation: six 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes six{
+  0%,100%
+  {
+    left: 175px;
+    top: 175px;
+  }
+  25%
+  {
+    top: 90px;
+    left: 175px;
+  }
+  50%
+  {
+    top: 90px;
+    left:90px;
+  }
+  75%
+  {
+    top: 175px;
+    left:90px;
+  }
+}
+@keyframes five {
+  0%,100%
+  {
+    top:90px;
+    left:175px;
+  }
+  25%
+  {
+    top: 90px;
+    left:90px;
+  }
+  50%
+  {
+
+
+      top: 175px;
+      left:90px;
+
+  }
+  75%
+  {
+    left: 175px;
+    top: 175px;
+  }
+}
+@keyframes four{
+0%,100%
+  {
+    top: 90px;
+    left:90px;
+  }
+  25%{
+    top: 175px;
+    left:90px;
+  }
+  50%
+  {
+    left: 175px;
+    top: 175px;
+  }
+  75%
+  {
+    top:90px;
+    left:175px;
+  }
+}
+@keyframes three
+{
+  0%,100%
+  {
+    top:90px;
+    left:5px;
+  }
+  75%
+  {   left:90px;
+    top: 90px;
+  }
+  50%
+  {
+    left:90px;
+    top:5px;
+  }
+  25%
+  {
+    top:5px;
+    left: 5px;
+  }
+}
+@keyframes two
+{
+  50%
+  {
+    top:90px;
+    left:5px;
+  }
+  25%
+  {   left:90px;
+    top: 90px;
+  }
+  0%,100%
+  {
+    left:90px;
+    top:5px;
+  }
+  75%
+  {
+    top:5px;
+    left: 5px;
+  }
+}
+@keyframes one
+{
+  75%
+  {
+    top:90px;
+    left:5px;
+  }
+  50%
+  {   left:90px;
+    top: 90px;
+  }
+  25%
+  {
+    left:90px;
+    top:5px;
+  }
+  0%,100%
+  {
+    top:5px;
+    left: 5px;
+  }
+}
