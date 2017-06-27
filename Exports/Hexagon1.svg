@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 130.43 130.43">
+  <defs>
+    <style>
+      .\33 31ea69b-ccf6-4be2-8a44-8d94f822751b {
+        fill: url(#070168af-9d0f-4e27-9183-2430aedade96);
+      }
+    </style>
+    <linearGradient id="070168af-9d0f-4e27-9183-2430aedade96" x1="78.69" y1="-665.65" x2="213.72" y2="-665.65" gradientTransform="translate(-508.85 432.52) rotate(45)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#88d3ce"/>
+      <stop offset="1" stop-color="#6e45e2"/>
+    </linearGradient>
+  </defs>
+  <title>Hexagon1</title>
+  <g id="c1016ffc-bb3b-4263-8d91-0702e45e15c9" data-name="Layer 2">
+    <g id="12224f9c-9e3e-45d0-ac6a-352b1a5df491" data-name="Layer 1">
+      <polygon class="331ea69b-ccf6-4be2-8a44-8d94f822751b" points="130.43 47.74 82.69 0 17.48 17.48 0 82.69 47.74 130.43 112.96 112.96 130.43 47.74"/>
+    </g>
+  </g>
+</svg>

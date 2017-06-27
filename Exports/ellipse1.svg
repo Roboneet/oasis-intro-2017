@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 335 335">
+  <defs>
+    <style>
+      .f0a3c711-4015-47d8-bd10-f519180d6aba {
+        fill: url(#b8e911f6-6e97-41f6-8288-abc354a5cce0);
+      }
+    </style>
+    <linearGradient id="b8e911f6-6e97-41f6-8288-abc354a5cce0" x1="72.66" y1="11.34" x2="265.53" y2="328.91" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffb199"/>
+      <stop offset="1" stop-color="#ff0844"/>
+    </linearGradient>
+  </defs>
+  <title>ellipse1</title>
+  <g id="be67abbb-97f5-4726-bb1a-87e8375098eb" data-name="Layer 2">
+    <g id="61593661-e724-4678-ac11-930787a8c4af" data-name="Layer 1">
+      <circle class="f0a3c711-4015-47d8-bd10-f519180d6aba" cx="167.5" cy="167.5" r="167.5"/>
+    </g>
+  </g>
+</svg>
