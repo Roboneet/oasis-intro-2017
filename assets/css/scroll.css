@@ -3,9 +3,11 @@
 .slider{
 	position: relative;
 	left: 0;
+	overflow-x:hidden;
 }
 .bar{
 	cursor: pointer;
+	min-width: 0px;
 }
 .bar:nth-of-type(1){
 	background: #444;

@@ -1,33 +1,25 @@
 @keyframes open{
 	0%{
-		left: 50%;
 		width: 0%;
-		padding: 0;
 	}
 	100%{
-		left: 0%;
 		width: 100%;
+		left: 0;
 	}
 }
 @keyframes close{
 	0%{
-		left: 0%;
 		width: 100%;
 	}
-	50%{
-		padding: 10%;
-	}
 	100%{
-		left: 50%;
 		width: 0%;
-		padding: 0;
 	}
 }
 .open{
-	animation: open 1s 0.2s ease-out both;
+	animation: open 2s 0.2s ease-out both;
 }
 .close{
-	animation: close 1s ease-out both;
+	animation: close 2s ease-out both;
 }
 .popup{
 	position: relative;
@@ -36,14 +28,16 @@
 	box-sizing: border-box;
 	flex-direction: column;
 	align-items: center;
-	padding: 10%;
+	padding: 2%;
 	border :solid 20px #808080;
 	border-top:none;
 	border-bottom: none;
 	overflow: hidden;
 	background-color: #fff;
 }
-
+.a{
+	display: flex;
+}
 .popup #cross{
 	padding: 2px;
 	border-radius: 50%;

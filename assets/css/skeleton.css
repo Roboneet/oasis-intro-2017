@@ -4,6 +4,7 @@
 */
 body{
 	background: #212121;
+	overflow-x: hidden;
 }
 
 
@@ -40,7 +41,6 @@ body{
 .slider{
 	height: 100vh;
 	display: inline-flex;
-	
 }
 
 .bar{
