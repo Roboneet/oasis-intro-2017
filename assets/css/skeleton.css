@@ -28,7 +28,7 @@ body{
 
 .navbar{
 	display: block;
-	margin: 70px auto;
+	margin: 20px auto;
 	height: 150px;
 	width: 200px;
 }
@@ -47,9 +47,66 @@ body{
 	text-align: center;
 	font-family: 'Lato', sans-serif;
 	font-size: 1.4em;
-	border: 2px solid black;
 	border-radius: 10px;
 	padding: 5px;
+	-webkit-animation-duration: 0.5s;
+	cursor: pointer;
+}
+
+.c1{
+	-webkit-animation-delay: 2s;
+}
+.c2{
+	-webkit-animation-delay: 2.5s;
+}
+.c3{
+	-webkit-animation-delay: 3s;
+}
+
+.c4{
+	-webkit-animation-delay: 3.5s;
+}
+.c5{
+	-webkit-animation-delay: 4s;
+}
+.c6{
+	-webkit-animation-delay: 4.5s;
+}
+
+.col {
+    letter-spacing: 0;
+}
+
+.col:hover,
+.col:active {
+  letter-spacing: 5px;
+}
+
+.col:after,
+.col:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(0,0,0,0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.col:hover:after,
+.col:hover:before {
+  backface-visibility: hidden;
+  border-color: #000;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.col:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
 }
 
 img{
@@ -74,11 +131,16 @@ img{
 	display: block;
 	padding: 10px;
 	margin: -20px auto 0 auto;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-delay: 1s;
+	cursor: pointer;
 }
 
 .social{
 	display: inline-block;
 	margin: 0 auto 60px 60px;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 5s;
 }
 
 .media{
