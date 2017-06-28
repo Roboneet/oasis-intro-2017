@@ -15,7 +15,7 @@ svg
   top: 50vh;
   left: 50vw;
   margin:-150px 0px 0px -150px;
-  animation: rotate 2s linear infinite;
+  animation: rotate 2.5s linear infinite;
   opacity: 1;
 }
 /*svg rotate*/
@@ -32,15 +32,18 @@ svg
 /*outer circle*/
 .e0770bb3-12fb-4558-9a20-3f88bac8bc7c,.\33 c3bd101-83a8-493e-b71c-b31f9f8b6a27
 { opacity: 0;
-  animation: bright_1 3s linear infinite;
+  animation: bright_1 6s  linear infinite;
 }
-
 @keyframes bright_1{
-  0%,10%
+  0%,10%,100%
   {
     opacity: 0.05;
   }
-  ,25%,50%,75%,100%
+  25%,50%
+  {
+    opacity: 0.25;
+  }
+  75%
   {
     opacity: 1;
   }
@@ -56,36 +59,36 @@ svg
 .f8cf5068-ac79-47d6-975e-df7bff1efcdc,
 .e8f17b25-0244-455d-b050-cfd86af4c063
 { opacity: 0;
-  animation: bright_2 3s linear infinite;
+  animation: bright_2 6s  linear infinite;
 }
 @keyframes bright_2{
-  0%,25%
+  0%,25%,100%
   {
     opacity: 0.05;
   }
-  50%,75%,100%
+  50%,75%
   {
     opacity: 1;
   }
 }
 /*circle_inner*/
 .dfa36f5c-fab8-432f-be3d-a935b707c3d9,.b3a111c9-60b0-4f35-a404-be1e630fb1df,.\36 a7f7999-9e28-4790-a232-6ef1b007f7ef{
-  animation: bright_3 3s linear infinite;
+  animation: bright_3 6s  linear infinite;
   opacity: 0.05;
 }
 /*small circles*/
 .\35 0030b71-27bf-4e88-bff1-d7e6e078b143,.d9e80c0e-7679-475a-be8e-5d567627c333,.\31 adc4342-61f0-46b9-9227-b8c73f9736d4,.\34 7f43150-7f0e-4e6a-bfe0-6bbd34d4c9f6,.ffeb4727-5dcc-4aa7-b7c4-df7cdcb9cb34,.\37 0ec350c-0034-4b2b-8a1b-8bcbe843d3a5,.eacf5d02-6794-48ed-af90-6791fd2d1bb4,
 .f7c7bd08-ff46-4d45-94a8-325d328528a5,.eb7cd8c9-b797-43ea-8daf-e8305edfe4e4,.\37 ec0d63c-b422-4530-91cf-1dd13709e6de,.b47d922f-fd25-4202-a619-52d3a91c641a,.\37 d38a22c-43cd-4a75-a7fe-cd72b4766eea
 {
-  animation: bright_3 3s linear infinite;
+  animation: bright_3 6s  linear infinite;
   opacity: 0.05;
 }
 @keyframes bright_3{
-  0%,25%,50%
+  0%,25%,50%,100%
   {
     opacity: 0.05;
   }
-  75%,100%
+  75%
   {
     opacity: 1;
   }
