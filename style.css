@@ -8,16 +8,39 @@ body
 	width: 100%;
 }
 
+.icon
+{
+	position: absolute;
+	margin-left: 15px;
+	margin-top: -39px;
+}
+
+#nav
+{
+	height: 40px;
+	width: 40px;
+}
+
+img : hover
+{
+	cursor: pointer;
+}
 
 .text_container
 {
-	margin-top: 113px;
-	margin-right: 173px;
+	margin-top: 81px;
+	margin-right: 310px;
 	float: right;
-	background-color: aquamarine;
 	width: 250px;
 	padding: 5px 15px 5px 15px;
+	font-family: 'Playfair Display', serif;
 
+}
+
+.text_container h2
+{
+	font-family: 'Ropa Sans', sans-serif;
+	font-size: 30px;
 }
 
 .img_container
@@ -43,7 +66,7 @@ body
 }
 #h1
 {
-	height: 120px;
+	height: 84px;
 }
 
 .shapes
@@ -60,7 +83,7 @@ body
 
 #o2
 {
-	height: 130px;
+	height: 91px;
 }
 
 .oct1
@@ -69,15 +92,20 @@ body
 	margin-left: 738px;
 }
 
+#o1
+{
+	height: 105px;
+}
+
 .oct3
 {
-	margin-left: 60px;
-	margin-top: 141px;
+	margin-left: 50px;
+	margin-top: 41px;
 }
 
 #o3
 {
-	height: 100px;
+	height: 70px;
 }
 
 .hex2
@@ -89,5 +117,11 @@ body
 
 #h2
 {
-	height: 120px;
+	height: 84px;
+}
+
+.oct5
+{
+	margin-left: 50px;
+	margin-top: 340px;
 }
