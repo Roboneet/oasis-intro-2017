@@ -1,8 +1,12 @@
+
+
 .slider{
 	position: relative;
 	left: 0;
 }
-
+.bar{
+	cursor: pointer;
+}
 .bar:nth-of-type(1){
 	background: #444;
 }

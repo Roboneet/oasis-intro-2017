@@ -22,8 +22,8 @@ body{
 
 .container{
 	width: calc(100vw - 300px);
-	position: fixed;
-	right:0;
+	position: fixed
+;	right:0;
 	top:0;
 	bottom:0;
 	
