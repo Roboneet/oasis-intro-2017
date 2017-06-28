@@ -1,0 +1,92 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.svg_container
+{ position: fixed;
+  background-color: #222;
+  width: 100vw;
+  height: 100vh;
+}
+svg
+{ position: absolute;
+  height: 300px;
+  width: 300px;
+  top: 50vh;
+  left: 50vw;
+  margin:-150px 0px 0px -150px;
+  animation: rotate 2s linear infinite;
+  opacity: 1;
+}
+/*svg rotate*/
+@keyframes rotate{
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  100%
+  {
+    transform: rotate(360deg);
+  }
+}
+/*outer circle*/
+.e0770bb3-12fb-4558-9a20-3f88bac8bc7c,.\33 c3bd101-83a8-493e-b71c-b31f9f8b6a27
+{ opacity: 0;
+  animation: bright_1 3s linear infinite;
+}
+
+@keyframes bright_1{
+  0%,10%
+  {
+    opacity: 0.05;
+  }
+  ,25%,50%,75%,100%
+  {
+    opacity: 1;
+  }
+}
+/*block*/
+.\37 9255385-3fee-4cf9-bf18-b56778cbb696,.\34 b28e61b-3d29-4c93-98fc-b5450e8d50cb,
+.e9031dcb-d252-442e-9212-b35a226865d0,
+.\30 23d349a-ae17-4bc2-ba9e-1328d41adf2e,
+.\36 0c8fcee-3aa7-4b31-8b32-cca1bacb0463,
+.c1d4f03e-eafd-4b4e-8a9e-1612d9c957a3,
+.\39 6e6af1e-4c68-434e-8912-8c3a5716ec86,
+.\35 a6ac179-9415-4208-bff9-ea50cbd21a2c,
+.f8cf5068-ac79-47d6-975e-df7bff1efcdc,
+.e8f17b25-0244-455d-b050-cfd86af4c063
+{ opacity: 0;
+  animation: bright_2 3s linear infinite;
+}
+@keyframes bright_2{
+  0%,25%
+  {
+    opacity: 0.05;
+  }
+  50%,75%,100%
+  {
+    opacity: 1;
+  }
+}
+/*circle_inner*/
+.dfa36f5c-fab8-432f-be3d-a935b707c3d9,.b3a111c9-60b0-4f35-a404-be1e630fb1df,.\36 a7f7999-9e28-4790-a232-6ef1b007f7ef{
+  animation: bright_3 3s linear infinite;
+  opacity: 0.05;
+}
+/*small circles*/
+.\35 0030b71-27bf-4e88-bff1-d7e6e078b143,.d9e80c0e-7679-475a-be8e-5d567627c333,.\31 adc4342-61f0-46b9-9227-b8c73f9736d4,.\34 7f43150-7f0e-4e6a-bfe0-6bbd34d4c9f6,.ffeb4727-5dcc-4aa7-b7c4-df7cdcb9cb34,.\37 0ec350c-0034-4b2b-8a1b-8bcbe843d3a5,.eacf5d02-6794-48ed-af90-6791fd2d1bb4,
+.f7c7bd08-ff46-4d45-94a8-325d328528a5,.eb7cd8c9-b797-43ea-8daf-e8305edfe4e4,.\37 ec0d63c-b422-4530-91cf-1dd13709e6de,.b47d922f-fd25-4202-a619-52d3a91c641a,.\37 d38a22c-43cd-4a75-a7fe-cd72b4766eea
+{
+  animation: bright_3 3s linear infinite;
+  opacity: 0.05;
+}
+@keyframes bright_3{
+  0%,25%,50%
+  {
+    opacity: 0.05;
+  }
+  75%,100%
+  {
+    opacity: 1;
+  }
+}
