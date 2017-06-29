@@ -2,6 +2,14 @@
 	border: 1px solid yellow;
 }
 */
+@keyframes hover{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
+}
 body{
 	background: #212121;
 	overflow-x: hidden;
@@ -52,12 +60,17 @@ body{
 }
 
 .button{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	position: absolute;
 	bottom: 50px;
 	width: 100px;
 	height: 100px;
-	border: 1px solid #dd2255;
+/*	border: 1px solid #dd2255;*/
 	left: 100px;
+	background-color: #fff;
+	color: #222222;
 }
 
 .left-tab{
@@ -71,5 +84,35 @@ body{
 	border: 1px solid yellow;
 }
 
-
-
+.button .uppertext{
+	font-weight:bold;
+	padding-bottom:2px;
+	margin-top: 20px;
+	font-size: 120%;
+	margin-bottom:2px;
+	border-bottom:1px solid #222;
+	z-index: 2;
+}
+.button p{
+	margin-top: 7px;
+	font-size: 80%;
+	text-transform: uppercase;
+	z-index: 2;
+}
+.button .overlay{
+	height: 100%;
+	background-color: #222;
+	color: #fff !important;
+	position: absolute;
+	left: 0;
+	width: 0%
+}
+.button:hover{
+	color: #fff;
+}
+.button:hover .overlay{
+	animation: hover 0.3s ease-in both;
+}
+.button:hover .uppertext{
+	border-bottom:1px solid #fff;
+}

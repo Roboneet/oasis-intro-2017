@@ -4,7 +4,6 @@
 	}
 	100%{
 		width: calc(100vw - 300px);
-		left: 300px;
 	}
 }
 @keyframes close{
@@ -34,7 +33,7 @@
 }
 .popup{
 	position: fixed;
-	z-index: 2;
+	z-index: 3;
 	left: 300px;
 	height: 100%;
 	display: none;
@@ -52,8 +51,6 @@
 	display: flex;
 }
 .popup #cross{
-	padding: 2px;
-	border-radius: 50%;
 	border:solid 3px #000;
 	position: absolute;
 	z-index: 10;
