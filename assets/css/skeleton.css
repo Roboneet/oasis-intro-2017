@@ -6,13 +6,16 @@ body{
 	background: #212121;
 	overflow-x: hidden;
 }
-
-
-.left-tab{
-	position: fixed;
+.wrapper{
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
 	top: 0;
 	left: 0;
-	bottom: 0;
+}
+
+.left-tab{
 	background-color: #212121;
 	width: 300px;
 }
@@ -23,18 +26,14 @@ body{
 
 .container{
 	width: calc(100vw - 300px);
-	position: fixed
-;	right:0;
-	top:0;
-	bottom:0;
-	
+	overflow: hidden;
 }
 
 .slider-container{
 	width:100%;
 	background-color: #eee;
 	height:100vh;
-	overflow-x: hidden;
+	overflow: hidden;
 	
 }
 
@@ -44,6 +43,7 @@ body{
 }
 
 .bar{
+	box-sizing: border-box;
 	height: 100%;
 	width: 300px;
 	border: 1px solid #009688;
