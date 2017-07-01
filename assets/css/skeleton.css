@@ -2,88 +2,113 @@
 	border: 1px solid yellow;
 }
 */
-
-* {
-  -moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
 body{
 	background: #212121;
 }
 
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
 .left-tab{
 	position: fixed;
-	border-top-right-radius: 50%;
-	border-bottom-right-radius: 50%;
 	top: 0;
 	left: 0;
 	bottom: 0;
-	background-color: #212121;
-	background-image:radial-gradient(yellow,#f06d06 );
+	background-color: #f3f3f3;
 	width: 300px;
 }
 
-.navbar{
+img{
+	max-width: 100%;
+	min-height: 100%;
+
+}
+
+.navhead{
+	margin-top: 40px;
+	//margin-bottom: 30px;
+}
+.monogram{
 	display: block;
-	margin: 20px auto;
-	height: 150px;
-	width: 200px;
+	height: 60px;
+	width: 60px;
+	margin: 0 auto;
 }
-
-.nav1{
-	margin: 40px auto 0 auto;
-}
-
-.nav2{
-	margin: 0 auto 60px auto;
-}
-
-.col{
+.oasishead{
 	display: block;
-	margin: 10px auto;
-	text-align: center;
-	font-family: 'Lato', sans-serif;
-	font-size: 1.4em;
-	border-radius: 10px;
 	padding: 5px;
-	-webkit-animation-duration: 0.5s;
+	font-size: 3.5em;
+	color: #3D3E3E;
+	text-align: center;
+	letter-spacing: .1em;
+	font-family: 'Coves', sans-serif;
+	font-weight: bold;
+	-webkit-animation-duration: 2s;
+}
+
+.dot > div{
+	display: inline-block;
+}
+
+.circ{
+	height: 7px;
+	width: 7px;
+	border-radius: 50%;
+	background-color: #3D3E3E;
+}
+
+.cir1{
+	margin-right: 25px;
+}
+
+.cir2{
+	margin-left: 25px;
+}
+
+.realm{
+	display: block;
+	font-size: 1.2em;
+	color: #3D3E3E;
+	text-align: center;
+	letter-spacing: .04em;
+	font-family: 'Coves', sans-serif;
+	-webkit-animation-duration: 2s;
+}
+.col1{
+	margin: -3px auto;
+
+}
+
+
+.col2{
+	text-align: center;
+	padding: 10px;
+	display: block;
+	font-size: 1.2em;
 	cursor: pointer;
+	color: #3D3E3E;
+	letter-spacing: .08em;
+	font-family: 'Coves', sans-serif;
+	-webkit-animation-duration:1s;
 }
 
-.c1{
-	-webkit-animation-delay: 2s;
-}
-.c2{
-	-webkit-animation-delay: 2.5s;
-}
-.c3{
-	-webkit-animation-delay: 3s;
+.col2:nth-of-type(1){
+	-webkit-animation-delay: 0.5s;
 }
 
-.c4{
-	-webkit-animation-delay: 3.5s;
-}
-.c5{
-	-webkit-animation-delay: 4s;
-}
-.c6{
-	-webkit-animation-delay: 4.5s;
+.col2:nth-of-type(2){
+	-webkit-animation-delay: 1s;
 }
 
-.col {
-    letter-spacing: 0;
+.col2:nth-of-type(3){
+	-webkit-animation-delay: 1.5s;
 }
-
-.col:hover,
-.col:active {
+.col2:hover,
+.col2:active {
   letter-spacing: 5px;
 }
 
-.col:after,
-.col:before {
+.col2:after,
+.col2:before {
   backface-visibility: hidden;
   border: 1px solid rgba(0,0,0,0);
   bottom: 0px;
@@ -95,58 +120,69 @@ body{
   width: 0;
 }
 
-.col:hover:after,
-.col:hover:before {
+.col2:hover:after,
+.col2:hover:before {
   backface-visibility: hidden;
-  border-color: #000;
+  border-color: #3D3E3E;
   transition: width 350ms ease-in-out;
   width: 70%;
 }
 
-.col:hover:before {
+.col2:hover:before {
   bottom: auto;
   top: 0;
   width: 70%;
 }
 
-img{
-	max-width: 100%;
-	min-height: 100%;
 
-}
-
-.oasisimg{
-	height: 150px;
-	width: 200px;
-	margin-top:20px;
-	margin-left: 20px;
-}
-
-.mirage{
-	font-family: 'Montserrat', sans-serif;
-	height: 50px;
-	width: 250px;
-	font-size: 3.5em;
-	text-align: center;
+.oasislogo{
 	display: block;
-	padding: 10px;
-	margin: -20px auto 0 auto;
-	-webkit-animation-duration: 1.5s;
-	-webkit-animation-delay: 1s;
-	cursor: pointer;
+	height: 100px;
+	width: 250px;
+	margin: 0 auto 20px auto;
 }
-
 .social{
-	display: inline-block;
-	margin: 0 auto 60px 60px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
 	-webkit-animation-duration: 1s;
-	-webkit-animation-delay: 5s;
+	-webkit-animation-delay: 2s;
 }
 
-.media{
-	height: 40px;
-	width: 40px;
+.foot{
+	margin-bottom: 20px;
 }
+
+.fa{
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	font-size: 30px;
+	background-color: #3D3E3E;
+	margin: 10px;
+	text-align: center;
+	transition-property: background;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+
+.fa:hover{
+	background-color: #f3f3f3;
+}
+
+.fa-facebook, .fa-twitter, .fa-youtube{
+	color: #f3f3f3;
+	padding: 5px;
+	transition-property: background;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+}
+
+.fa-facebook:hover, .fa-twitter:hover, .fa-youtube:hover{
+	color: #3D3E3E;
+}
+
+
 
 .info{
 	display: none;
