@@ -8,25 +8,30 @@
 .bar{
 	cursor: pointer;
 	min-width: 0px;
-	background-size: auto 100%;
+	background-size: cover;
 	transition: all 0.5s cubic-bezier(.18,.89,.32,1.28);
 }
 .bar:nth-of-type(1){
 	background: #444 url("../img/Panel1.jpg") top center no-repeat;
+	background-position: 49% 0;
 }
 
 .bar:nth-of-type(2){
-	background: #777 url("../img/Panel2.jpg") top left no-repeat;
+	background: #777 url("../img/Panel2.jpg") top center no-repeat;
+	background-position: 47.5% 0;
 }
 
 .bar:nth-of-type(3){
-	background: #999 url("../img/Panel3.jpg") top left no-repeat;
+	background: #999 url("../img/Panel3.jpg") top center no-repeat;
+	background-position: 48% 0;
 }
 
 .bar:nth-of-type(4){
-	background: #bbb url("../img/Panel4.jpg") top left no-repeat;
+	background: #bbb url("../img/Panel4.jpg") top center no-repeat;
+	background-position: 47.5% 0;
 }
 
 .bar:nth-of-type(5){
 	background: #ddd url("../img/Panel5.jpg") top center no-repeat;
+	background-position: 49% 0;
 }
