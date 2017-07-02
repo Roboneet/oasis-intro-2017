@@ -57,13 +57,14 @@ body{
 .slider{
 	height: 100vh;
 	display: inline-flex;
+	display: flex;
 }
 
 .bar{
 	box-sizing: border-box;
 	height: 100%;
-	min-width: 140px;
-	width: calc(20vw - 60px);
+	/*width: calc(20vw - 60px);*/
+	flex: 1;
 	display: flex;
 	justify-content: center;
 	position: relative;
@@ -180,9 +181,6 @@ nav a {
 	top: 0;
 	width: 0%
 }
-.button * {
-	transform: color 1s ease-in;
-}
 .button .overlay * {
 	color: #fff !important;
 	white-space: nowrap;
@@ -190,6 +188,10 @@ nav a {
 .overlay .seperator {
 	background: #fff;
 }
+.bar:hover {
+	flex: 1.2;
+}
 .bar:hover .overlay{
-	animation: hover 0.3s ease-in both;
+	animation: hover 0.3s cubic-bezier(.18,.89,.32,1.28) both;
+	animation-delay: 0.1s;
 }

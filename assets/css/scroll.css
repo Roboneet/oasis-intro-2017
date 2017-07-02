@@ -8,8 +8,8 @@
 .bar{
 	cursor: pointer;
 	min-width: 0px;
-	background-size: cover;
-	background-attachment: local;
+	background-size: auto 100%;
+	transition: all 0.5s cubic-bezier(.18,.89,.32,1.28);
 }
 .bar:nth-of-type(1){
 	background: #444 url("../img/Panel1.jpg") top center no-repeat;

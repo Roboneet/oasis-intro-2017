@@ -1,25 +1,25 @@
 @keyframes open{
 	0%{
 		width: 0%;
-		opacity: 0;
-		transform: scale(0.75);
+		/*opacity: 0;
+		transform: scale(0.75);*/
 	}
 	100%{
 		width: calc(100vw - 300px);
-		opacity: 1;
-		transform: scale(1);
+		/*opacity: 1;
+		transform: scale(1);*/
 	}
 }
 @keyframes close{
 	0%{
 		width: calc(100vw - 300px);
-		opacity: 1;
-		transform: scale(1);
+		/*opacity: 1;
+		transform: scale(1);*/
 	}
 	100%{
 		width: 0%;
-		opacity: 0;
-		transform: scale(0.75);
+		/*opacity: 0;
+		transform: scale(0.75);*/
 	}
 }
 @keyframes closebar{
