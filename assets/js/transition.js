@@ -10,7 +10,7 @@ $('.slider .bar').click(function(){
 		setTimeout(function(){
 			$("#" + n).css("display","none");
 			$("#" + n).removeClass("close");
-		},1100);
+		},600);
 		$("#" + n).addClass("close");
 	});
 })
