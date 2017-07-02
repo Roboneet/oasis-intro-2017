@@ -2,6 +2,9 @@
 	border: 1px solid yellow;
 }
 */
+* {
+	color: #3D3E3E;
+}
 @keyframes hover{
 	0%{
 		width: 0%;
@@ -26,6 +29,7 @@ body{
 .left-tab{
 	background-color: #F3F3F3;
 	width: 300px;
+	position: relative;
 }
 
 .info{
@@ -73,18 +77,65 @@ body{
 	background-color: #fff;
 	color: #222222;
 	padding: 10px;
-	font-family: "CovesLight";
+	font-family: "Coves";
 }
 
-.left-tab{
+.left-tab {
+	font-family: "Coves";
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .left-tab > div{
-	height: 25%;
 	border: 1px solid yellow;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.left-tab h1 {
+	font-size: 47px;
+	margin: 0;
+	margin-bottom: 7px;
+}
+
+.left-tab div span a {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 23px;
+}
+
+#realms {
+	display: flex;
+	justify-content: space-between;
+}
+
+#realms span {
+	display: flex;
+	align-items: center;
+	font-size: 23px
+}
+
+#realms span:nth-of-type(2) {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	font-size: 18px;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+}
+nav a {
+	width: 100%;
+	text-decoration: none;
+	color: inherit;
+	text-align: center;
+	padding: 7px 0;
+	font-size: 18px
 }
 
 .button .uppertext{
@@ -113,15 +164,31 @@ body{
 	height: 100%;
 	background-color: #222;
 	color: #fff !important;
+	z-index: 4;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	position: absolute;
 	left: 0;
 	top: 0;
 	width: 0%
 }
-.button:hover{
-	color: #fff;
+.button * {
+	transform: color 1s ease-in;
+}
+.button:hover *{
+	color: #fff !important;
+}
+.button .overlay * {
+	color: #fff !important;
+	white-space: nowrap;
 }
 .button:hover .seperator {
+	background: #fff;
+}
+.overlay .seperator {
 	background: #fff;
 }
 .button:hover .overlay{

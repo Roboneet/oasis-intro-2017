@@ -1,8 +1,10 @@
 @font-face {
-  font-family: "CovesLight";
+  font-family: "Coves";
   src: url("../fonts/CovesLight.otf");
+  font-weight: normal;
 }
 @font-face {
-  font-family: "CovesBold";
+  font-family: "Coves";
   src: url("../fonts/CovesBold.otf");
+  font-weight: bold;
 }
