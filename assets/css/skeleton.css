@@ -24,7 +24,7 @@ body{
 }
 
 .left-tab{
-	background-color: #212121;
+	background-color: #F3F3F3;
 	width: 300px;
 }
 
@@ -42,7 +42,7 @@ body{
 	background-color: #eee;
 	height:100vh;
 	overflow: hidden;
-	
+
 }
 
 .slider{
@@ -53,9 +53,9 @@ body{
 .bar{
 	box-sizing: border-box;
 	height: 100%;
-	width: 300px;
-	border: 1px solid #009688;
-	display: inline-block;
+	width: calc(20vw - 60px);
+	display: flex;
+	justify-content: center;
 	position: relative;
 }
 
@@ -63,14 +63,17 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	position: absolute;
 	bottom: 50px;
 	width: 100px;
 	height: 100px;
-/*	border: 1px solid #dd2255;*/
-	left: 100px;
+	/*border: 1px solid #dd2255;*/
+	/*left: 60px;*/
 	background-color: #fff;
 	color: #222222;
+	padding: 10px;
+	font-family: "CovesLight";
 }
 
 .left-tab{
@@ -87,14 +90,21 @@ body{
 .button .uppertext{
 	font-weight:bold;
 	padding-bottom:2px;
-	margin-top: 20px;
+	margin-top: 0px;
 	font-size: 120%;
 	margin-bottom:2px;
-	border-bottom:1px solid #222;
+	/*border-bottom:1px solid #222;*/
+	z-index: 2;
+}
+.button .seperator {
+	width: 95%;
+	height: 1px;
+	background: black;
 	z-index: 2;
 }
 .button p{
 	margin-top: 7px;
+	margin-bottom: 0;
 	font-size: 80%;
 	text-transform: uppercase;
 	z-index: 2;
@@ -105,14 +115,15 @@ body{
 	color: #fff !important;
 	position: absolute;
 	left: 0;
+	top: 0;
 	width: 0%
 }
 .button:hover{
 	color: #fff;
 }
+.button:hover .seperator {
+	background: #fff;
+}
 .button:hover .overlay{
 	animation: hover 0.3s ease-in both;
-}
-.button:hover .uppertext{
-	border-bottom:1px solid #fff;
 }
