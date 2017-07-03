@@ -131,6 +131,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	font-size: 18px;
+	font-weight: bold;
 }
 
 nav {
@@ -143,8 +144,28 @@ nav a {
 	color: inherit;
 	text-align: center;
 	padding: 7px 0;
-	font-size: 18px
+	font-size: 18px;
 }
+nav a::before, nav a::after {
+	content: "\30fb";
+	font-weight: bold;
+	color: transparent;
+	transition: color 0.1s ease-in;
+}
+nav a:hover {
+	cursor: pointer;
+}
+nav a:hover:before, nav a:hover:after {
+	color: inherit;
+}
+.social {
+	color: transparent;
+	background-size: contain !important;
+	font-size: 30px !important;
+}
+#facebook { background: url("../img/facebook.png") no-repeat center; }
+#twitter { background: url("../img/twitter.png") no-repeat center; }
+#youtube { background: url("../img/youtube.png") no-repeat center; }
 
 .button .uppertext{
 	font-weight:bold;
