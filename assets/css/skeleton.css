@@ -137,6 +137,7 @@ body{
 nav {
 	display: flex;
 	flex-direction: column;
+	position: relative;
 }
 nav a {
 	width: 100%;
@@ -146,18 +147,34 @@ nav a {
 	padding: 7px 0;
 	font-size: 18px;
 }
-nav a::before, nav a::after {
+/*nav a::before, nav a::after {
 	content: "\30fb";
 	font-weight: bold;
 	color: transparent;
 	transition: color 0.1s ease-in;
-}
+}*/
 nav a:hover {
 	cursor: pointer;
 }
-nav a:hover:before, nav a:hover:after {
-	color: inherit;
+#pointers div {
+	position: absolute;
+	font-weight: bold;
+	color: transparent;
+	transition: top 0.3s cubic-bezier(.18,.89,.32,1.28),
+							left 0.3s cubic-bezier(.18,.89,.32,1.28);
 }
+#pointerLeft {top: 44px;left: 10px;}
+#pointerRight {top: 44px;right: 10px;}
+#pointers div.plv, #pointers div.prv {color: inherit !important;}
+#pointers div.pl1 {top:8px;left:-8px;}
+#pointers div.pl2 {top:44px;left:-14px;}
+#pointers div.pl3 {top:81px;left:-19px;}
+#pointers div.pr1 {top:8px;right:-8px;}
+#pointers div.pr2 {top:44px;right:-14px;}
+#pointers div.pr3 {top:81px;right:-19px;}
+/*nav a:hover:before, nav a:hover:after {
+	color: inherit;
+}*/
 .social {
 	color: transparent;
 	background-size: contain !important;
