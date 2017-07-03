@@ -37,6 +37,6 @@
 
 .bar:nth-of-type(5){
 	background: #ddd url("../img/Panel5.jpg") top center no-repeat;
-	background-position: 33% 0;
+	background-position: 49% 0;
 	background-size: cover;
 }
