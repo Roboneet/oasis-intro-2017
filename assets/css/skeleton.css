@@ -188,7 +188,8 @@ nav a:hover:before, nav a:hover:after {
 .button p{
 	margin-top: 7px;
 	margin-bottom: 0;
-	font-size: 80%;
+	font-size: 100%;
+	white-space: nowrap;
 	text-transform: uppercase;
 	z-index: 2;
 }
