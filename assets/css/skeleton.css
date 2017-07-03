@@ -239,3 +239,18 @@ nav a:hover {
 	animation: hover 0.5s cubic-bezier(.18,.89,.32,1.28) both;
 	animation-delay: 0.1s;
 }
+
+@media only screen and (max-width: 1000px){
+
+	.slider{
+		display: block;
+	}
+	
+	.open, .close{
+		position: absolute;
+		top:0;
+		bottom:0;
+		
+		left:0;
+	}
+}
