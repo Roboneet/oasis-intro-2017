@@ -13,7 +13,7 @@
 }
 .bar:nth-of-type(1){
 	background: #444 url("../img/Panel1.jpg") top center no-repeat;
-	background-position: 49% 0;
+	background-position: 39% 0;
 	background-size: cover;
 }
 
@@ -25,7 +25,7 @@
 
 .bar:nth-of-type(3){
 	background: #999 url("../img/Panel3.jpg") top center no-repeat;
-	background-position: 48% 0;
+	background-position: 33% 0;
 	background-size: cover;
 }
 
