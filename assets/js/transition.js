@@ -5,12 +5,24 @@ $('.slider .bar').click(function(){
 	// $(".bar").addClass("closebar");
 	$("#" + n).addClass("open");
 
-	$(".popup #cross").click(function(){
+	function close() {
 		$("#" + n).removeClass("open");
 		setTimeout(function(){
 			$("#" + n).css("display","none");
 			$("#" + n).removeClass("close");
 		},600);
 		$("#" + n).addClass("close");
+	}
+
+	$(".popup #cross").click(function(){
+		close();
+	});
+
+	$(".popup").click(function(){
+		close();
+	});
+
+	$(".popup .video-container").click(function(e){
+		e.stopPropagation();
 	});
 })

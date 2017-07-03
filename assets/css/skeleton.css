@@ -163,6 +163,9 @@ nav a:hover:before, nav a:hover:after {
 	background-size: contain !important;
 	font-size: 30px !important;
 }
+.social:hover {
+	cursor: pointer;
+}
 #facebook { background: url("../img/facebook.png") no-repeat center; }
 #twitter { background: url("../img/twitter.png") no-repeat center; }
 #youtube { background: url("../img/youtube.png") no-repeat center; }
