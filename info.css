@@ -1,0 +1,97 @@
+body{
+	background-color:#dadeff;
+	height: 100vh;
+	width: 100vw;
+	padding:0;
+	margin:0;
+	font: 18px/22px arial, verdana;
+}
+
+#container{
+	background: transparent;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	/*border: 1px solid #000;*/
+	justify-content:center;
+	padding:0;
+	/*margin: 100px 500px;
+*/}
+
+.main{
+	display:flex;
+	justify-content: space-around;
+}
+
+
+.main h2{
+	font-size: 30px;
+	line-height: 40px;
+	text-align:center;
+}
+
+.content, .image-main{
+	width: 400px;
+	min-height: 400px;
+	max-height: 600px;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+/*	border: 1px solid #000;*/
+	margin: 0 100px;
+}
+
+.image-main{
+	background: url('Assets/Exports/tardis.png') 0 0  no-repeat;
+	background-size: auto 400px;
+}
+
+.shape{
+	position: absolute;	
+	top:0;
+	left:0;
+	z-index: -1;
+}
+
+
+.o41{
+	top: 20%;
+	left: 20%;
+}
+
+.o11{
+	top: 10%;
+	left: 90%;
+}
+
+.o21{
+	top: 60%;
+	left: 80%;
+}
+
+.o31{
+	top: 70%;
+	left: 10%;
+	transform: skew(20deg);
+}
+
+.o12{
+	top: 2%;
+	left: 50%;
+}
+
+.o32{
+	top: 80%;
+	left: 60%;
+	transform: skew(-10deg);
+}
+
+.o33{
+	top: 2%;
+	left: 2%;
+	transform: skew(-10deg);
+}
