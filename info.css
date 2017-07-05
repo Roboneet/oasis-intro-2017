@@ -7,7 +7,7 @@ body{
 	font: 18px/22px arial, verdana;
 }
 
-#container{
+#container, #moving{
 	background: transparent;
 	position: absolute;
 	height: 100%;
