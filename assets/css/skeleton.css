@@ -261,6 +261,7 @@ nav a:hover {
 		margin : 0;
 		align-self: flex-end;
 		margin-right: 50px;
+		font-size: 19px;
 	}
 
 	.open, .close{
@@ -272,9 +273,31 @@ nav a:hover {
 	}
 
 	nav a{
-		font-size: 2em;
+		font-size: 2.1em;
+		font-weight: 400;
 	}
 	#facebook, #twitter, #youtube{
+		font-size: 50px;
+	}
+
+	#pointerLeft {top: 44px;left: 10px;font-size:40px;}
+	#pointerRight {top: 44px;right: 10px;font-size:40px;}
+	#pointers div.plv, #pointers div.prv {color: inherit !important;}
+	#pointers div.pl1 {top:0px;left:-15px;}
+	#pointers div.pl2 {top:48px;left:-25px;}
+	#pointers div.pl3 {top:103px;left:-29px;}
+	#pointers div.pr1 {top:0px;right:-15px;}
+	#pointers div.pr2 {top:48px;right:-25px;}
+	#pointers div.pr3 {top:103px;right:-29px;}
+
+	span label{
+		font-size: 30px;
+	}
+
+	
+
+	#realms span:first-of-type,
+	#realms span:last-of-type{
 		font-size: 40px;
 	}
 
