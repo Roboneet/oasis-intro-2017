@@ -1,0 +1,77 @@
+<! DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OASIS</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+
+</head>
+<body>
+	<div id="container"></div>
+	<script >
+		var assets =   [{url:'assets/Exports/octa4.svg',x:380,y:380,offset:1},
+						{url:'assets/Exports/octa3.svg',x:50,y:41,offset:1},
+						{url:'assets/Exports/octa4.svg',x:448,y:-7,offset:1},
+						{url:'assets/Exports/octa1.svg',x:350,y:738,offset:1},
+						{url:'assets/Exports/octa2.svg',x:863,y:0,offset:1},
+						{url:'assets/Exports/octa1.svg',x:50,y:340,offset:1},
+						{url:'assets/Exports/octa3.svg',x:876,y:230,offset:1}],
+						layers=[],
+						w=870,
+						h=750,
+						loaded=0,
+						container=document.getElementById('container'),
+						s=new Snap(w,h),
+						c,
+						g;
+						container.appendChild(s.node);
+						c=s.g();
+						g=s.g();
+						g.append(c);
+
+						for(var i=0;i<assets.length;i+=1)
+						{
+							var img=new Image();
+							img.src=assets[i].url;
+							img.onload=handle_load;
+							var _img=s.image(assets[i].url,assets[i].x,assets[i],y);
+							c.append(_img);
+							layers.push(_img);
+						}
+
+						function handle_load()
+						{
+							loaded+=1;
+							if(loaded==assets.length)
+							{
+								handle_loaded();
+							}
+						}
+
+						function handle_loaded()
+						{
+							container.addEventListener('mousemove',handle_mousemove);
+							container.addEventListener('mouseout',handle_mouseout);
+							container.addEventListener('mouseover',handle_mouseover);
+						}
+
+						handle_mousemove()
+						{
+
+						}
+
+						handle_mouseout()
+						{
+
+						}
+
+						function handle_mouseover()
+						{
+
+						}
+
+
+	</script>
+</body>
+</html>
