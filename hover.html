@@ -1,5 +1,4 @@
 <! DOCTYPE HTML>
-<!DOCTYPE html>
 <html>
 <head>
 	<title>OASIS</title>
@@ -8,26 +7,53 @@
 
 </head>
 <body>
+`	<section>
 	<div id="container"></div>
+	</section>
+	<style>
+		#container
+		{
+			border-color: black;
+			border: solid;
+			background-color: pink;
+		}
+
+		svg
+		{
+			display: block;
+			margin: auto;
+		}
+
+		section
+		{
+			position: relative;
+			min-height: 100px;
+			height: 100vh;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+		}
+	</style>
 	<script >
-		var assets =   [{url:'assets/Exports/octa4.svg',x:380,y:380,offset:1},
-						{url:'assets/Exports/octa3.svg',x:50,y:41,offset:1},
-						{url:'assets/Exports/octa4.svg',x:448,y:-7,offset:1},
-						{url:'assets/Exports/octa1.svg',x:350,y:738,offset:1},
-						{url:'assets/Exports/octa2.svg',x:863,y:0,offset:1},
-						{url:'assets/Exports/octa1.svg',x:50,y:340,offset:1},
-						{url:'assets/Exports/octa3.svg',x:876,y:230,offset:1}],
+		var assets =   [{url:'assets/Exports/Octa4.svg',x:50,y:50,offset:-0.2},
+						{url:'assets/Exports/Octa3.svg',x:50,y:50,offset:0},
+						{url:'assets/Exports/Octa4.svg',x:448,y:-7,offset:0},
+						{url:'assets/Exports/Octa1.svg',x:350,y:738,offset:0},
+						{url:'assets/Exports/Octa2.svg',x:863,y:0,offset:0},
+						{url:'assets/Exports/Octa1.svg',x:50,y:340,offset:0},
+						{url:'assets/Exports/Octa3.svg',x:876,y:230,offset:0}],
 						layers=[],
-						w=870,
-						h=750,
+						w=1000,
+						h=700,
 						loaded=0,
 						container=document.getElementById('container'),
 						s=new Snap(w,h),
 						c,
 						g;
 						container.appendChild(s.node);
-						c=s.g();
+						TweenMax.set(s.node,{scale:0.1});
 						g=s.g();
+						c=s.g();
 						g.append(c);
 
 						for(var i=0;i<assets.length;i+=1)
@@ -35,7 +61,7 @@
 							var img=new Image();
 							img.src=assets[i].url;
 							img.onload=handle_load;
-							var _img=s.image(assets[i].url,assets[i].x,assets[i],y);
+							var _img=s.image(assets[i].url,assets[i].x,assets[i].y);
 							c.append(_img);
 							layers.push(_img);
 						}
@@ -56,20 +82,37 @@
 							container.addEventListener('mouseover',handle_mouseover);
 						}
 
-						handle_mousemove()
+					/*	function handle_mousemove(e)
 						{
+							var dx = e.OffsetX - (w/2);
+							var dy= e.offsetY - (h/2);
 
+							for(var i=0;i<layer.length;i+=1)
+							{
+								var l= layers[i];
+								var _x=dx*assets[i].offset;
+								var _y=dy*asstes[i].offset;
+								TweenMax.to(l.node,0.1,{x: _x,y:_y});
+
+							}
 						}
 
-						handle_mouseout()
+						function handle_mouseout(e)
 						{
+							
+							for(var i=0;i<layers.length;i+=1)
+							{
+								var l=layers[i];
+								TweenMax.to(s.node,0.2,{scale:0.1,ease:Quad.easeOut});
 
+							}
 						}
 
-						function handle_mouseover()
+						function handle_mouseover(e)
 						{
+							TweenMax.to(s.node,0.2,{scale:0.3,ease:Back.easeOut});
 
-						}
+						}*/
 
 
 	</script>
