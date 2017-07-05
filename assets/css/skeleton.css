@@ -166,12 +166,12 @@ nav a:hover {
 #pointerLeft {top: 44px;left: 10px;}
 #pointerRight {top: 44px;right: 10px;}
 #pointers div.plv, #pointers div.prv {color: inherit !important;}
-#pointers div.pl1 {top:8px;left:-8px;}
-#pointers div.pl2 {top:44px;left:-14px;}
-#pointers div.pl3 {top:81px;left:-19px;}
-#pointers div.pr1 {top:8px;right:-8px;}
-#pointers div.pr2 {top:44px;right:-14px;}
-#pointers div.pr3 {top:81px;right:-19px;}
+#pointers div.pl1 {left:-8px;}
+#pointers div.pl2 {left:-14px;}
+#pointers div.pl3 {left:-19px;}
+#pointers div.pr1 {right:-8px;}
+#pointers div.pr2 {right:-14px;}
+#pointers div.pr3 {right:-19px;}
 /*nav a:hover:before, nav a:hover:after {
 	color: inherit;
 }*/
