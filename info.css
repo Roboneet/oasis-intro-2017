@@ -59,39 +59,50 @@ body{
 
 
 .o41{
-	top: 20%;
-	left: 20%;
+	top: 30%;
+	left: 10%;
+	height: 380px;
 }
 
 .o11{
 	top: 10%;
-	left: 90%;
+	left: 85%;
+	height: 120px;
+	transform: rotate(-60deg);
 }
 
 .o21{
-	top: 60%;
-	left: 80%;
+	top: 70%;
+	left: 85%;
+	height: 150px;
+	
 }
 
 .o31{
-	top: 70%;
+	top: 80%;
 	left: 10%;
-	transform: skew(20deg);
+	transform: skew(20deg) rotate(90deg);
+	height: 100px;
+	
 }
 
 .o12{
-	top: 2%;
+	top: 15%;
 	left: 50%;
+	height: 120px;
+	transform: rotate(240deg);
 }
 
 .o32{
 	top: 80%;
 	left: 60%;
 	transform: skew(-10deg);
+	height: 120px;
 }
 
 .o33{
-	top: 2%;
-	left: 2%;
-	transform: skew(-10deg);
+	top: 5%;
+	left: 5%;
+	transform: skew(-15deg) rotate(180deg);
+	height: 150px;
 }

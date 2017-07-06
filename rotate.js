@@ -13,7 +13,7 @@ function handle_mousemove(e){
 	var dx = e.offsetX - (w / 2);
     var dy = e.offsetY - (h / 2);
    
-  	TweenMax.to(moving, 2, {rotationY: dx/60 , rotationX: -dy/60});
+  	TweenMax.to(moving, 2, {rotationY: dx/30 , rotationX: -dy/30});
 }
 
 function handle_mouseout(e) {
