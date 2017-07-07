@@ -1,4 +1,7 @@
 $('.slider .bar').click(function(){
+	if($('.info_open').length){
+		return
+	}
 	var n = $('.slider .bar').index(this) + 1;
 	console.log(n);
 	$("#" + n).css("display","flex");

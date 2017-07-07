@@ -7,7 +7,7 @@ body{
 	font: 18px/22px arial, verdana;
 }
 
-#container, #movable{
+#info-container, #movable{
 	background: transparent;
 	position: absolute;
 	height: 100%;

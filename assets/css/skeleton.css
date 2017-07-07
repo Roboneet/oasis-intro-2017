@@ -51,6 +51,7 @@ body{
 	background-color: #eee;
 	height:100vh;
 	overflow: hidden;
+	position: relative;
 
 }
 
