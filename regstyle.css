@@ -13,7 +13,7 @@ body{
 
 
 .register_here{
-	width: 50%;
+	width: 70%;
     background: #eee; 
     display: block;
     margin: 100px auto;
@@ -142,7 +142,7 @@ button a:hover{
 }
 
 .input-field{
-	margin-bottom: 20px
+	margin-bottom: 30px;
 }
 
 .input-field input:focus,
@@ -182,6 +182,14 @@ button a:hover{
 		display: block;
 		width: 100%;
 	}
+	.sub-info{
+		margin-left: 0;
+	}
 
 }
 
+.sub-info{
+	text-align: left;
+	font-size: 0.6em;
+	margin-left: 10%;
+}
