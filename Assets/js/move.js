@@ -13,7 +13,7 @@
           var rx = -newv*5;
           var ry = newh*5;
           // $$('#movable').style.transform = "rotateX("+(-newv*5)+"deg) rotateY("+newh*5+"deg)";
-          TweenMax.to(movable, .2, {rotationY: ry , rotationX: rx, ease: Quad.easeOut});
+          TweenMax.to(movable, 2, {rotationY: ry , rotationX: rx, ease: Quad.easeOut});
         },timeout);
       }
 

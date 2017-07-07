@@ -14,7 +14,7 @@ body, html {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  perspective: 1000px;
+  perspective: 1800px;
   perspective-origin: center;
   transform-style: preserve-3d;
 }
