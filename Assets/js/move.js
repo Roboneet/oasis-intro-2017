@@ -46,10 +46,10 @@
       );
 
       // updating the description container
-      $$('#desc').innerHTML = "right: "+hd+" "+newh+
-      "<br>bottom: "+vd+" "+newv+
-      "<br>speeds: "+dhd+" "+dvd+
-      "<br>timeout: "+timeout;
+      // $$('#desc').innerHTML = "right: "+hd+" "+newh+
+      // "<br>bottom: "+vd+" "+newv+
+      // "<br>speeds: "+dhd+" "+dvd+
+      // "<br>timeout: "+timeout;
 
       //applying the transform
       setTransform(newv,newh,timeout);
