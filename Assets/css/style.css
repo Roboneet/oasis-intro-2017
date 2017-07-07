@@ -1,0 +1,140 @@
+body
+{
+	background-color: #f9e6cb;
+}
+
+.container
+{
+	width: 100%;
+}
+
+.icon
+{
+	position: absolute;
+	margin-left: 15px;
+	margin-top: -39px;
+}
+
+#nav
+{
+	height: 40px;
+	width: 40px;
+}
+
+img : hover
+{
+	cursor: pointer;
+}
+
+.text_container
+{
+	margin-top: 34px;
+	margin-right: 310px;
+	float: right;
+	width: 250px;
+	padding: 5px 15px 5px 15px;
+	font-family: 'Playfair Display', serif;
+
+}
+
+.text_container h2
+{
+	font-family: 'Ropa Sans', sans-serif;
+	font-size: 30px;
+}
+
+.img_container
+{
+	width: 350px;
+	margin-left: 204px;
+	margin-top: 70px;
+}
+
+#icon
+{
+	height: 400px;
+}
+
+.text_container h2
+{
+	text-align: center;
+}
+.hex1
+{
+	margin-left: 380px ;
+	margin-top: 380px;
+}
+#h1
+{
+	height: 84px;
+}
+
+.shapes
+{
+	z-index: -1;
+	position: absolute;
+}
+
+
+.oct2
+{
+	margin-left: 863px;
+}
+
+#o2
+{
+	height: 91px;
+}
+
+.oct1
+{
+	margin-top: 350px;
+	margin-left: 738px;
+}
+
+#o1
+{
+	height: 105px;
+}
+
+.oct3
+{
+	margin-left: 50px;
+	margin-top: 41px;
+}
+
+#o3
+{
+	height: 70px;
+}
+
+.hex2
+{
+	margin-left: 448px;
+	margin-top: -7px
+
+}
+
+#h2
+{
+	height: 84px;
+}
+
+.oct5
+{
+	margin-left: 50px;
+	margin-top: 340px;
+}
+
+.oct6
+{
+
+	margin-left: 876px;
+	margin-top: 230px;
+
+}
+
+#o6
+{
+	height: 115px;
+}

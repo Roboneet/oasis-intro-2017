@@ -1,0 +1,130 @@
+body{
+	background-color:#dadeff;
+	height: 100vh;
+	width: 100vw;
+	padding:0;
+	margin:0;
+	font: 18px/22px arial, verdana;
+}
+
+#container, #movable{
+	background: transparent;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	/*border: 1px solid #000;*/
+	justify-content:center;
+	padding:0;
+	transform: perspective(5990px);
+	transform-style: preserve-3d;
+	/*margin: 100px 500px;
+*/}
+
+.main{
+	display:flex;
+	justify-content: space-around;
+}
+
+
+.main h2{
+	font-size: 30px;
+	line-height: 40px;
+	text-align:center;
+}
+
+.content, .image-main{
+	width: 400px;
+	min-height: 400px;
+	max-height: 600px;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+/*	border: 1px solid #000;*/
+	margin: 0 100px;
+}
+
+.image-main{
+	background: url('Assets/Exports/tardis.png') 0 0  no-repeat;
+	background-size: auto 400px;
+}
+
+.shape{
+	position: absolute;	
+	top:0;
+	left:0;
+	z-index: -1;
+	width: 150px;
+    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+
+/*	border: 1px solid #000;*/
+	background: linear-gradient(#48aede, #97549C)
+}
+
+
+.o33:nth-of-type(7){
+	top: 30%;
+	left: 10%;
+	height: 380px;
+	width: 380px;
+	transform: translateZ(-100px);
+}
+
+.o33:nth-of-type(6){
+	top: 10%;
+	left: 85%;
+	height: 125px;
+	width: 125px;
+	transform: rotate(-60deg);
+	transform: translateZ(0px) rotate(-50deg);
+}
+
+.o33:nth-of-type(5){
+	top: 70%;
+	left: 85%;
+	height: 125px;
+	width: 125px;
+	transform: translateZ(-50px);
+}
+
+.o33:nth-of-type(4){
+	top: 80%;
+	left: 10%;
+	transform: rotate(20deg) rotate(90deg) translateZ(150px);
+	height: 150px;
+	
+}
+
+.o33:nth-of-type(3){
+	top: 15%;
+	left: 50%;
+	height: 150px;
+	transform: rotate(240deg) translateZ(150px);
+}
+
+.o33:nth-of-type(2){
+	top: 80%;
+	left: 60%;
+	transform: rotate(-10deg) translateZ(-50px);
+	height: 75px;
+	width: 75px;
+	
+}
+
+.o33{
+	height: 150px;
+
+}
+
+.o33:nth-of-type(1){
+	top: 5%;
+	left: 5%;
+	transform: rotate(180deg) translateZ(-100px);
+	height: 75px;
+	width: 75px;
+}
+

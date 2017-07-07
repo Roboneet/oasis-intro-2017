@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 152.18 194.75">
+  <defs>
+    <style>
+      .\36 5293673-0042-4a3a-81ea-b89ae1fda293 {
+        fill: url(#5b7f78cc-d53e-42d6-bbd5-bcfb2b281d99);
+      }
+    </style>
+    <linearGradient id="5b7f78cc-d53e-42d6-bbd5-bcfb2b281d99" x1="80.32" y1="290.19" x2="182.66" y2="458.69" gradientTransform="matrix(0.87, -0.14, 0.05, 0.98, -55.16, -249.14)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffb199"/>
+      <stop offset="1" stop-color="#ff0844"/>
+    </linearGradient>
+  </defs>
+  <title>ellipse2</title>
+  <g id="d47f17e0-eba7-4471-ac35-52aefd34ec88" data-name="Layer 2">
+    <g id="61dd04bf-5055-4018-bfcb-30859de64a12" data-name="Layer 1">
+      <path class="65293673-0042-4a3a-81ea-b89ae1fda293" d="M106.06,2.58h0a55.37,55.37,0,0,0-50.37,8.84L36,26.51A55.37,55.37,0,0,0,16.88,53.77L2.58,99a55.37,55.37,0,0,0,0,33.3L10,156a55.37,55.37,0,0,0,36.13,36.19h0a55.37,55.37,0,0,0,50.37-8.84l19.69-15.09A55.37,55.37,0,0,0,135.3,141l14.3-45.25a55.37,55.37,0,0,0,0-33.3l-7.44-23.67A55.37,55.37,0,0,0,106.06,2.58Z"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 126.49 144.03">
+  <defs>
+    <style>
+      .\31 9f602f1-774e-4c54-a27d-4d88b7ba9b73 {
+        fill: url(#bd9debb9-219c-425d-b3df-8488f0fc603b);
+      }
+    </style>
+    <linearGradient id="bd9debb9-219c-425d-b3df-8488f0fc603b" x1="-16.97" y1="177.73" x2="53.9" y2="294.42" gradientTransform="matrix(0.79, -0.66, 0.67, 0.75, -107.49, -93.21)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#21d4fd"/>
+      <stop offset="1" stop-color="#b721ff"/>
+    </linearGradient>
+  </defs>
+  <title>Octa1</title>
+  <g id="5b47710c-089e-4c05-abb3-8332303afb4a" data-name="Layer 2">
+    <g id="688849de-e670-4fd0-b0de-785b94cf73d1" data-name="Layer 1">
+      <polygon class="19f602f1-774e-4c54-a27d-4d88b7ba9b73" points="65.55 0 20.15 14.27 0 62.36 16.89 116.11 60.94 144.03 106.33 129.76 126.49 81.66 109.59 27.91 65.55 0"/>
+    </g>
+  </g>
+</svg>
