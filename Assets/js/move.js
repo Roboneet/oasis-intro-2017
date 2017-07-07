@@ -9,7 +9,11 @@
       // the main transform function
       function setTransform(newv,newh,timeout) {
         setTimeout(function(){
-          $$('#movable').style.transform = "rotateX("+(-newv*5)+"deg) rotateY("+newh*5+"deg)";
+          var movable = document.getElementById('movable');
+          var rx = -newv*5;
+          var ry = newh*5;
+          // $$('#movable').style.transform = "rotateX("+(-newv*5)+"deg) rotateY("+newh*5+"deg)";
+          TweenMax.to(movable, .2, {rotationY: ry , rotationX: rx, ease: Quad.easeOut});
         },timeout);
       }
 
