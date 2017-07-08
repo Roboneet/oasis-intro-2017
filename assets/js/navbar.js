@@ -26,7 +26,7 @@ $(document).ready(() => {
 				$('.info').css(colors[data])
 				console.log(colors[data])
 				// console.log($(window).width() - $('.slider-container').offset().left + 'px')
-				$('.slider-container').animate({'left':$(window).width() - $('.slider-container').offset().left - 20 +'px'}, 700);
+				$('.slider-container').animate({'left':$(window).width() - $('.slider-container').offset().left - 35 +'px'}, 700);
 
 			}
 			return;
