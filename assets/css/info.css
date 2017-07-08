@@ -76,17 +76,17 @@
 
 .info-container[data="contact"] .image-main{
 	background: url('../Exports/tardis.png') 0 0  no-repeat;
-	background-size: auto 400px;
+	background-size: contain;
 }
 
 .info-container[data="about"] .image-main{
 	background: url('../Exports/Hexa.png') 0 0  no-repeat;
-	background-size: auto 400px;
+	background-size: contain;
 }
 
 .info-container[data="sponsors"] .image-main{
 	background: url('../Exports/death.png') 0 0  no-repeat;
-	background-size: auto 400px;
+	background-size: contain;
 }
 
 
