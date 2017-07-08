@@ -132,3 +132,17 @@
 	width: 75px;
 }
 
+
+.slider-container .left-arrow{
+	z-index: 1;
+	cursor: pointer;
+	background-color: #000;
+	width: 20px;
+	height: 20px;
+	background: url('../img/left.png') 0 0 no-repeat;
+	background-size: cover;
+	position: absolute;
+	top : calc(50vh - 10px);
+	margin:0px;
+	display: none;
+}
