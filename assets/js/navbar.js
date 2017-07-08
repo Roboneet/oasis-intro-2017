@@ -55,6 +55,13 @@ $(document).ready(() => {
 		}
 	})
 
+	$('.heading_left_tab').click(function(event){
+		if(open){
+			show_slider(null);
+		}
+	})
+	
+
 	function show_slider(func){
 		$('.info_open').removeClass('info_open');
 		open = null;
