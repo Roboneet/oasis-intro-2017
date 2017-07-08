@@ -1,6 +1,6 @@
 
 .info{
-	background-color:rgb(239, 229, 246);
+	background-color:transparent;
 	height: 100vh;
 	width: calc(100% - 20px);
 	position:absolute;
@@ -11,7 +11,9 @@
 	font-family: "Coves";
 }
 
-#info-container, #movable{
+
+
+.info-container, .movable{
 	background: transparent;
 	position: absolute;
 	height: 100%;
@@ -25,12 +27,19 @@
 	padding:0;
 	transform: perspective(5990px);
 	transform-style: preserve-3d;
+	color: inherit;
 	/*margin: 100px 500px;
 */}
+
+.info-container{
+	display: none;
+
+}
 
 .main{
 	display:flex;
 	justify-content: space-around;
+	color: inherit;
 }
 
 
@@ -38,6 +47,7 @@
 	font-size: 30px;
 	line-height: 40px;
 	text-align:center;
+	color: inherit
 }
 
 .content, .image-main{
@@ -49,12 +59,29 @@
 	justify-content: center;
 /*	border: 1px solid #000;*/
 	margin: 0 100px;
+	color: inherit;
 }
 
-.image-main{
+.content p{
+	color: inherit;
+}
+
+
+
+.info-container[data="contact"] .image-main{
 	background: url('../Exports/tardis.png') 0 0  no-repeat;
 	background-size: auto 400px;
 }
+
+.info-container[data="about"] .image-main{
+	background: url('../Exports/death.png') 0 0  no-repeat;
+	background-size: auto 400px;
+}
+
+/*.image-main{
+	background-size: auto 400px;
+}*/
+
 
 .shape{
 	position: absolute;	
@@ -62,12 +89,23 @@
 	left:0;
 	z-index: -1;
 	width: 150px;
-    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    
+}
+
+.info-container[data="contact"] .shape{
+	-webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 
 /*	border: 1px solid #000;*/
 	background: linear-gradient(rgb(33, 164, 255), rgb(190, 0 , 255))
 }
+.info-container[data="about"] .shape{
+	-webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+	background: linear-gradient(rgb(204, 189, 138), rgb(135, 123, 148))
+}
+
+
 
 
 .o33:nth-of-type(7){
@@ -145,4 +183,8 @@
 	top : calc(50vh - 10px);
 	margin:0px;
 	display: none;
+}
+
+.info_open{
+	display:flex;
 }

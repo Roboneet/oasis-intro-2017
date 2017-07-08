@@ -1,5 +1,19 @@
 $(document).ready(() => {
 	var open = null;
+	colors={
+		contact: {
+			backgroundColor :'rgb(239, 229, 246)',
+			color: '#212121',
+		},
+		about: {
+			backgroundColor: 'rgb(42, 52, 150)',
+			color: '#fff',
+		},
+		sponsors: {
+			backgroundColor: 'rgb(42, 52, 150)',
+			color: '#fff',
+		}
+	}
 	$('nav a').unbind('click').click(function(event){
 		let data = $(event.target).attr('data');
 		function move_slider(){
@@ -7,7 +21,10 @@ $(document).ready(() => {
 			if(data){
 				open = data;
 				$('.slider-container .left-arrow').fadeIn();
-				$('#info-container[data='+data+']').addClass('info_open');
+
+				$('.info-container[data='+data+']').addClass('info_open');
+				$('.info').css(colors[data])
+				console.log(colors[data])
 				// console.log($(window).width() - $('.slider-container').offset().left + 'px')
 				$('.slider-container').animate({'left':$(window).width() - $('.slider-container').offset().left - 20 +'px'}, 700);
 

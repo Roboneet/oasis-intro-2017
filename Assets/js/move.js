@@ -9,7 +9,7 @@
       // the main transform function
       function setTransform(newv,newh,timeout) {
         setTimeout(function(){
-          var movable = document.getElementById('movable');
+          var movable = document.getElementsByClassName('movable');
           var rx = -newv*5;
           var ry = newh*5;
           // $$('#movable').style.transform = "rotateX("+(-newv*5)+"deg) rotateY("+newh*5+"deg)";
