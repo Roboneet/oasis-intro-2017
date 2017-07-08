@@ -1,0 +1,25 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+}
+.box1,.box2
+{ z-index: 1;
+  width: 100px;
+  height: 100px;
+  border:2px solid black;
+}
+.iframe_container1,.iframe_container2{
+  display: none;
+  position: absolute;
+  top: 0px;
+  background-color:rgba(0,0,0,0.7);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+}
+.video
+{ margin-left: 5%;margin-top:2.5%;
+  z-index: 100;
+}
