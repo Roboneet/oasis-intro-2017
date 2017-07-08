@@ -1,27 +1,41 @@
 $(document).ready(() => {
 	var open = null;
-	$('nav a').click(function(){
-		show_slider();
-		let data = $(this).attr('data');
-		if(data){
-			open = data;
-			$('#info-container[data='+data+']').addClass('info_open');
-			console.log($(window).width() - $('.slider-container').offset().left + 'px')
-			$('.slider-container').animate({'left':$(window).width() - $('.slider-container').offset().left - 20 +'px'}, 700);
+	$('nav a').unbind('click').click(function(event){
+		let data = $(event.target).attr('data');
+		function move_slider(){
+			
+			if(data){
+				open = data;
 
+				$('#info-container[data='+data+']').addClass('info_open');
+				// console.log($(window).width() - $('.slider-container').offset().left + 'px')
+				$('.slider-container').animate({'left':$(window).width() - $('.slider-container').offset().left - 20 +'px'}, 700);
+
+			}
+			return;
 		}
+
+		if(open && open==data){
+			return;
+		}else if(open){
+			show_slider(move_slider);
+		}else{
+			move_slider();
+		}
+		
 	})
 
 	$('.slider-container').click(function(event){
 
 		if(open){
-			show_slider()
+			show_slider(null);
 		}
 	})
 
-	function show_slider(){
+	function show_slider(func){
 		$('.info_open').removeClass('info_open');
-		$('.slider-container').animate({'left':'0px'}, 700);
+		open = null;
+		$('.slider-container').animate({'left':'0px'}, 700, func);
 	}
 
 })
