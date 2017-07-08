@@ -10,8 +10,8 @@ $(document).ready(() => {
 			color: '#fff',
 		},
 		sponsors: {
-			backgroundColor: 'rgb(42, 52, 150)',
-			color: '#fff',
+			backgroundColor: 'rgb(255, 233, 237)',
+			color: 'rgb(190, 0 ,0)',
 		}
 	}
 	$('nav a').unbind('click').click(function(event){

@@ -80,13 +80,16 @@
 }
 
 .info-container[data="about"] .image-main{
+	background: url('../Exports/Hexa.png') 0 0  no-repeat;
+	background-size: auto 400px;
+}
+
+.info-container[data="sponsors"] .image-main{
 	background: url('../Exports/death.png') 0 0  no-repeat;
 	background-size: auto 400px;
 }
 
-/*.image-main{
-	background-size: auto 400px;
-}*/
+
 
 
 .shape{
@@ -109,6 +112,10 @@
 	-webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 	background: linear-gradient(rgb(204, 189, 138), rgb(135, 123, 148))
+}
+.info-container[data="sponsors"] .shape{
+	border-radius: 50%;
+	background: linear-gradient(rgb(255, 154, 138), rgb(255, 0, 50))
 }
 
 
