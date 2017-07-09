@@ -61,11 +61,25 @@
 			return;
 		}
 
-		if(open && open==data){
+		if(open && open==data){     
+			// it's already open
 			return;
 		}else if(open){
+			// another info section is already open
 			close_info(open_info);
+		}else if($('.open').length){
+			// a panel is already open
+			let n = $('.open').attr('id');
+			$("#" + n).removeClass("open");
+			setTimeout(function(){
+				$("#" + n).css("display","none");
+				$("#" + n).removeClass("close");
+				open_info();
+			},600);
+			$("#" + n).addClass("close");
+
 		}else{
+			// nothing else is open
 			open_info();
 		}
 		
