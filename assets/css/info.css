@@ -1,19 +1,18 @@
 
-.info{
+.info-container{
 	background-color:transparent;
 	height: 100vh;
-	width: calc(100% - 35px);
+	width: 100%;
 	position:absolute;
-	right: 35px;
+	right:0;
 	top:0;
-	z-index: -1;
-	display: block;
+	display: none;
 	font-family: "Coves";
 }
 
 
 
-.info-container, .movable{
+.info, .movable{
 	background: transparent;
 	position: absolute;
 	height: 100%;
@@ -31,7 +30,7 @@
 	/*margin: 100px 500px;
 */}
 
-.info-container{
+.info{
 	display: none;
 
 }
@@ -74,17 +73,17 @@
 
 
 
-.info-container[data="contact"] .image-main{
+.info[data="contact"] .image-main{
 	background: url('../Exports/tardis.png') 0 0  no-repeat;
 	background-size: contain;
 }
 
-.info-container[data="about"] .image-main{
+.info[data="about"] .image-main{
 	background: url('../Exports/Hexa.png') 0 0  no-repeat;
 	background-size: contain;
 }
 
-.info-container[data="sponsors"] .image-main{
+.info[data="sponsors"] .image-main{
 	background: url('../Exports/death.png') 0 0  no-repeat;
 	background-size: contain;
 }
@@ -101,19 +100,19 @@
     
 }
 
-.info-container[data="contact"] .shape{
+.info[data="contact"] .shape{
 	-webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 
 /*	border: 1px solid #000;*/
 	background: linear-gradient(rgb(33, 164, 255), rgb(190, 0 , 255))
 }
-.info-container[data="about"] .shape{
+.info[data="about"] .shape{
 	-webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 	background: linear-gradient(rgb(204, 189, 138), rgb(135, 123, 148))
 }
-.info-container[data="sponsors"] .shape{
+.info[data="sponsors"] .shape{
 	border-radius: 50%;
 	background: linear-gradient(rgb(255, 154, 138), rgb(255, 0, 50))
 }
@@ -184,18 +183,20 @@
 }
 
 
-.slider-container .left-arrow{
-	z-index: 1;
-	cursor: pointer;
+.info-container .cross{
 	
-	width: 25px;
-	height: 25px;
-	background: url('../img/left.png') 0 0 no-repeat;
+	background: url('../img/cross.svg') 0 0 no-repeat;
 	background-size: cover;
+	border:solid 3px #000;
 	position: absolute;
-	top : calc(50vh - 10px);
+	z-index: 10;
+	cursor: pointer;
+	top: 30px;
+	right: 30px;
+	width: 30px;
+	height: 30px;
 	margin:5px;
-	display: none;
+	display: block;
 	color: #fff;
 }
 
