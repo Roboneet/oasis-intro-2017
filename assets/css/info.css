@@ -214,6 +214,7 @@
 	
 	background: url('../img/cross.svg') 0 0 no-repeat;
 	background-size: cover;
+	background-color: #fff;
 	border:solid 3px #000;
 	position: absolute;
 	z-index: 10;
