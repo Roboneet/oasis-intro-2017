@@ -57,6 +57,7 @@
 }
 .popup #cross{
 	border:solid 3px #000;
+	background-color: #fff;
 	position: absolute;
 	z-index: 10;
 	cursor: pointer;
