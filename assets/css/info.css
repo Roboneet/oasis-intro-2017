@@ -125,7 +125,7 @@
 	left: 7%;
 	height: 300px;
 	width: 300px;
-	transform: translateZ(-100px) skew(30deg);
+	transform: translateZ(-100px) ;
 }
 
 .o33:nth-of-type(6){
