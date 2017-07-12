@@ -45,6 +45,8 @@
 	display:flex;
 	justify-content: space-around;
 	color: inherit;
+	align-items:center;
+	
 }
 
 
@@ -58,21 +60,46 @@
 .content, .image-main{
 	width: 400px;
 	min-height: 400px;
-	max-height: 600px;
+	
 	display: flex;
 	flex-direction:column;
 	justify-content: center;
 /*	border: 1px solid #000;*/
-	margin: 0 100px;
+/*	margin: 0 100px;*/
 	color: inherit;
 }
 
+
+.content{
+	width: 500px;
+	transform: translateZ(0);
+}
 .content p{
 	color: inherit;
+	text-align: center;
+	font-size: 18px;
+}
+
+.contact_data{
+	display: flex;
+	flex-flow: row wrap;
+
+	padding: 0;
+}
+
+.contactinfo, .contact_dept{
+	width: 200px;
+}
+
+.contactinfo{
+	margin: 20px;
 }
 
 
-
+.content a{
+	text-decoration: none;
+	color: inherit;
+}
 .info[data="contact"] .image-main{
 	background: url('../Exports/tardis.png') 0 0  no-repeat;
 	background-size: contain;
@@ -134,7 +161,7 @@
 	height: 125px;
 	width: 125px;
 	transform: rotate(-60deg);
-	transform: translateZ(0px) rotate(-50deg);
+	transform: translateZ(-10px) rotate(-50deg);
 }
 
 .o33:nth-of-type(5){
@@ -157,7 +184,7 @@
 	top: 15%;
 	left: 50%;
 	height: 150px;
-	transform: rotate(240deg) translateZ(150px);
+	transform: rotate(240deg) translateZ(-150px);
 }
 
 .o33:nth-of-type(2){
@@ -211,6 +238,7 @@
 	.content{
 		margin: 0 auto;
 		z-index: 1;
+		height: 100vh;
 	}
 
 	.o33:nth-of-type(7){
@@ -222,7 +250,16 @@
 	}
 
 	.content p{
-		font-size: 25px;
+		font-size: 30px;
+	}
+
+	.contactinfo{
+		font-size: 30px;
+	}
+
+	.main{
+		height: 100vh;
+		
 	}
 
 
