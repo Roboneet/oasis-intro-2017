@@ -31,7 +31,7 @@
 	}
 }
 .open{
-	animation: open 0.5s cubic-bezier(.18,.89,.32,1.28) both;
+	animation: open 0.9s cubic-bezier(.18,.89,.32,1.28) both;
 }
 .close{
 	animation: close 0.5s cubic-bezier(.6,-0.28,.74,.05) both;
