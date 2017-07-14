@@ -45,7 +45,7 @@
 
 	var open = null;
 	$('nav a').unbind('click').click(function(e){
-		let data = $(event.target).attr('data');
+		let data = $(e.target).attr('data');
 		function open_info(){
 			
 			if(data){
