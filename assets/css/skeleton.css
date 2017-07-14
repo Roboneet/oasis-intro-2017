@@ -316,4 +316,9 @@ nav a:hover {
 		font-size: 40px;
 	}
 
+	#dates, #timer{
+		font-size: 1.7em;
+	}
+
+
 }
