@@ -51,8 +51,9 @@
       // "<br>speeds: "+dhd+" "+dvd+
       // "<br>timeout: "+timeout;
 
-      //applying the transform
-      setTransform(newv,newh,timeout);
-
+      //applying the transform if the browser is not firefox
+      if(navigator.userAgent.toLowerCase().indexOf('firefox') == -1){
+        setTransform(newv,newh,timeout);
+      }
     }
 })();
