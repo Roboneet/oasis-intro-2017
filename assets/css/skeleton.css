@@ -136,6 +136,12 @@ body{
 	font-weight: bold;
 }
 
+#dates{
+	margin-top: 5px;
+	padding: 3px;
+	font-weight: bold;
+}
+
 nav {
 	display: flex;
 	flex-direction: column;
@@ -177,6 +183,13 @@ nav a:hover {
 /*nav a:hover:before, nav a:hover:after {
 	color: inherit;
 }*/
+
+#timer{
+	margin-bottom: 10px;
+	padding: 5px;
+	font-size: 1.5em;
+}
+
 .social {
 	color: transparent;
 	background-size: contain !important;
