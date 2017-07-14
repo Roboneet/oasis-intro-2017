@@ -49,12 +49,21 @@
 	
 }
 
+.main div {
+	flex: 1;
+}
+
+.image-main {
+	max-width: 400px;
+}
+
 
 .main h2{
-	font-size: 30px;
+	font-size: 35px;
 	line-height: 40px;
 	text-align:center;
-	color: inherit
+	color: inherit;
+	margin: 10px;
 }
 
 .content, .image-main{
@@ -73,6 +82,7 @@
 .content{
 	width: 500px;
 	transform: translateZ(0);
+	padding: 20px;
 }
 .content p{
 	color: inherit;
