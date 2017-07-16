@@ -7,12 +7,14 @@
 		$("#" + n).addClass("open");
 
 		function close() {
+			stop_video(n);
 			$("#" + n).removeClass("open");
 			setTimeout(function(){
 				$("#" + n).css("display","none");
 				$("#" + n).removeClass("close");
 			},600);
 			$("#" + n).addClass("close");
+
 		}
 
 		$(".popup #cross").click(function(){
@@ -27,6 +29,12 @@
 			e.stopPropagation();
 		});
 	})
+
+	function stop_video(n){
+		var video = $('#'+n+' iframe');
+		src = video.attr('src');
+		video.attr('src', src); 
+	}
 
 	colors={
 		contact: {
@@ -70,6 +78,7 @@
 		}else if($('.open').length){
 			// a panel is already open
 			let n = $('.open').attr('id');
+			stop_video(n);
 			$("#" + n).removeClass("open");
 			setTimeout(function(){
 				$("#" + n).css("display","none");
