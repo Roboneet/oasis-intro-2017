@@ -7,3 +7,5 @@ if(diffDays<0){
 }
 
 $('#timer span').text(diffDays);
+$('#timer').addClass('animated fadeInUp');
+$('#timer').fadeIn();
