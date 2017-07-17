@@ -1,29 +1,29 @@
 
-var horseyElement = horsey(document.querySelector('#college'), {
-	source: function(data, done){
-		var items = ['demo', 'pen','apple', 'pinapple','pen'];
-		$.ajax({
-			url: '',
-			method: 'GET',
-			success: function(data){
-				items = data
-			},
-			error: function(xhr, error_message, error_code){
-				console.log(error_code,error_message)
-			}
-		})
-		done(null,[{ list :items.filter(item => {
-			return item.indexOf(data.input) !== -1;
-		})}])
-	}
-})
+// var horseyElement = horsey(document.querySelector('#college'), {
+// 	source: function(data, done){
+// 		var items = ['demo', 'pen','apple', 'pinapple','pen'];
+// 		$.ajax({
+// 			url: '',
+// 			method: 'GET',
+// 			success: function(data){
+// 				items = data
+// 			},
+// 			error: function(xhr, error_message, error_code){
+// 				console.log(error_code,error_message)
+// 			}
+// 		})
+// 		done(null,[{ list :items.filter(item => {
+// 			return item.indexOf(data.input) !== -1;
+// 		})}])
+// 	}
+// })
 
-/*= android issue workaround */
-var jElement = $("#college");
-jElement.keydown(function() {
-    horseyElement.hide();
-    horseyElement.show();
-})
+// /*= android issue workaround */
+// var jElement = $("#college");
+// jElement.keydown(function() {
+//     horseyElement.hide();
+//     horseyElement.show();
+// })
 
 
 $('.submit').click(function(){
@@ -59,7 +59,7 @@ $('.submit').click(function(){
 
 
 	$.ajax({
-		url: '',
+		url: 'form_submit',
 		data: data_json,
 		type: 'POST',
 		success: ajax_success,
@@ -94,3 +94,96 @@ function ajax_success(json){
 function ajax_error(xhr, error_message , error_code){
 	console.log(error_code, error_message);
 }
+
+events_colleges_ajax();
+
+function events_colleges_ajax(){
+
+	$.ajax({
+		url: 'events_colleges',
+		type: 'GET',
+		success: make_list,
+		error: function(xhr, error_message, error_code){console.log(error_message)},
+	})
+
+}
+
+var college_list = ['abc', 'def', 'ghi'];	//testing
+var event_list = ['klm', 'nop', 'slide'];		//testing
+show_event_options();   // testing
+
+
+function make_list(json){
+	var key_names = {'colleges': college_list, 'events': event_list};
+	key_names.forEach(function(ele, index){
+		key_names[ele].push(json[ele]);
+	})
+
+	show_event_options();
+}
+
+function show_event_options(){
+	console.log('called')
+	var event_options = '';
+	event_list.forEach(function(ele){
+		event_options += '<option>'+ele+'</option>';
+	})
+	$('#events').html(event_options)
+}
+
+
+function iterate(source, handler){
+	
+	var value = handler.val();
+	
+	var options = {
+          pre:  ''    
+        , post: ''
+        , extract: function(ele) {
+            return ele;
+          }
+      };
+    var list = fuzzy.filter(value, source, options);
+   
+	return list
+}
+
+function display(list, handler){
+	// console.log('called')
+	var html = ''
+	list.forEach(function(ele){
+		html += '<li class="college_name">'+ele.string+'</li>'
+	})
+	var top = handler.offset().top + handler.height();
+	var left = handler.offset().left;
+	var width = handler.width();
+	
+	$('.dropdown').css({'top':top, 'left':left, 'width':width , 'display':'block'})
+	$('.dropdown').html('<ul>'+html+'</ul>')
+
+
+}
+
+
+
+$('#college').unbind('keyup').keyup(function(){
+	var handler = $(this);
+	display(iterate(college_list, handler), handler);
+
+})
+
+$('.register_here').scroll(function(){
+	// console.log('called')
+	$('.dropdown').css('display', 'none');
+})
+
+$(window).click(function(e){
+	if (e.target.className == 'college_name'){
+		
+		var text = $(e.target).text();
+		$('#college').val(text)
+	}else{
+		$('.dropdown').css('display', 'none');
+	}
+
+})

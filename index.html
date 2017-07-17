@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="assets/css/popup.css">
 		<link rel="stylesheet" href="assets/css/info.css">
 		<link rel="stylesheet" href="assets/css/regstyle.css">
-		<link href="assets/css/horsey.min.css" rel="stylesheet">
+		
 		<style id="keep_at_end"></style>
 		<meta charset="UTF-8">
 	</head>
@@ -372,6 +372,7 @@ Oasis ‘17. Bigger than ever.</p>
               		 <div class="input-field">
                			 <label>College</label>
                			 <input name="college" type="text" placeholder="College name" required="" id="college" />
+               			 
                       <div class="sub-info">(Type only if not found in dropdown list)</div>
               		</div>
              		 <div class="input-field">
@@ -405,10 +406,8 @@ Oasis ‘17. Bigger than ever.</p>
               		
              		 <div class="input-field">
              		 	<label> Select events to register</label>
-             		 	<select>
-             		 		<option value="Rapwars">Rapwars </option>
-             		 		<option value="Rapwars">Rapwars </option>
-             		 		<option value="Rapwars">Rapwars </option>
+             		 	<select id='events'>
+             		 		
              		 	</select>
              		 </div>
 
@@ -433,8 +432,9 @@ Oasis ‘17. Bigger than ever.</p>
 		<script src="assets/js/navbar.js"></script>
 		<script src="assets/js/move.js"></script>
 		<script src='assets/js/timer.js'></script>
-		<script src="assets/js/horsey.min.js"></script>
-    <script src="assets/js/register.js"></script>
+		<script src="assets/js/fuzzy.js"></script>
+    	<script src="assets/js/register.js"></script>
+    	<div class='dropdown'></div>
 	</body>
 </html>
 

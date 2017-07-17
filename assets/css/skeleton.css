@@ -327,3 +327,38 @@ nav a:hover {
 
 
 }
+
+.dropdown{
+	position: relative;
+	top: 0;
+	left:0;
+	display:none;
+}
+.dropdown ul{
+	width:100%;
+	background: #eee;
+	color: #212121;
+	margin:0;
+	padding: 0 ;
+	font-family:'Coves';
+	border-radius: 0 0 6px 6px;
+}
+
+.dropdown ul li{
+	list-style: none;
+	font-size: 25px;
+	line-height: 32px;
+	text-align: left;
+	padding:0 10px;
+	/*border-bottom:  1px solid #fff;*/
+}
+
+.dropdown ul li:last-of-type{
+	border-radius: 0 0 6px 6px;
+}
+
+.dropdown li:hover{
+	background: #ddd;
+	color: #000;
+	
+}
