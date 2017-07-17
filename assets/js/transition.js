@@ -109,6 +109,18 @@
 
 		if(open){
 			close_info(null);
+		}else if($('.open').length){
+			// a panel is already open
+			let n = $('.open').attr('id');
+			stop_video(n);
+			$("#" + n).removeClass("open");
+			setTimeout(function(){
+				$("#" + n).css("display","none");
+				$("#" + n).removeClass("close");
+				open_info();
+			},600);
+			$("#" + n).addClass("close");
+
 		}
 	})
 	
