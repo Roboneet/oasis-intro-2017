@@ -1,5 +1,5 @@
 
-horsey(document.querySelector('#college'), {
+var horseyElement = horsey(document.querySelector('#college'), {
 	source: function(data, done){
 		var items = ['demo', 'pen','apple', 'pinapple','pen'];
 		// $.ajax({
@@ -19,15 +19,11 @@ horsey(document.querySelector('#college'), {
 })
 
 /*= android issue workaround */
-var KEY_UP = 38;
-var KEY_DOWN = 40;
 var jElement = $("#college");
-jElement.keyup(function(e) {
-  if (!e.keyCode === KEY_UP && !e.keyCode === KEY_DOWN) {
-    horseyInstance.hide();
-    horseyInstance.show();
-  }
-});
+jElement.keydown(function() {
+    horseyElement.hide();
+    horseyElement.show();
+})
 
 
 $('.submit').click(function(){
