@@ -75,10 +75,18 @@
 	width: 50%;
 	padding: 5px;
 	display: inline-block;
+	text-align: left;
 }
+
 .register_here input[type=radio]{
 	width: 10%;
 	padding: 5px;
+}
+
+.register_here .radio-field{
+	display: inline-block;
+	width: 100px;
+	margin: 0 10px 0 0;
 }
 
 .register_here .button-field{
@@ -166,7 +174,7 @@
 
 }
 
-@media (max-width : 768px){
+@media (max-width : 1000px){
 	.register_here{
 		width: 100%;
 		border-radius: 0;
@@ -190,15 +198,27 @@
 
 	.register_here .input-field .gender-wrap input{
 		padding: 20px;
+		margin: 10px 0;
 	}
 
 	.register_here .gender-wrap{
-		display: block;
+		display: flex;
+		justify-content: space-around;
 		width: 100%;
 	}
 	.register_here .sub-info{
 		margin-left: 0;
+		font-size: 28px !important;
 	}
+
+	.register_here label{
+		width: 100%;
+		font-size: 35px;
+	}
+	.register_here .radio-field{
+		width: 200px;
+	}
+	
 
 }
 
