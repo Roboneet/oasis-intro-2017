@@ -18,6 +18,16 @@ horsey(document.querySelector('#college'), {
 	}
 })
 
+/*= android issue workaround */
+var KEY_UP = 38;
+var KEY_DOWN = 40;
+var jElement = $("#college");
+jElement.keyup(function(e) {
+  if (!e.keyCode === KEY_UP && !e.keyCode === KEY_DOWN) {
+    horseyInstance.hide();
+    horseyInstance.show();
+  }
+});
 
 
 $('.submit').click(function(){
