@@ -362,3 +362,12 @@ nav a:hover {
 	color: #000;
 	
 }
+
+
+@media (max-width: 1000px){
+	.dropdown ul li{
+		font-size: 33px;
+		line-height: 35px;
+		
+	}
+}
