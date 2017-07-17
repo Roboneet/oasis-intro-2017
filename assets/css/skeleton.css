@@ -180,6 +180,8 @@ nav a:hover {
 #pointers div.pr1 {right:-8px;}
 #pointers div.pr2 {right:-14px;}
 #pointers div.pr3 {right:-19px;}
+#pointers div.pl4 {left:-6px;}
+#pointers div.pr4 {right:-6px;}
 /*nav a:hover:before, nav a:hover:after {
 	color: inherit;
 }*/
@@ -305,6 +307,8 @@ nav a:hover {
 	#pointers div.pr1 {top:0px !important;right:-15px;}
 	#pointers div.pr2 {top:48px !important;right:-25px;}
 	#pointers div.pr3 {top:103px !important;right:-29px;}
+	#pointers div.pr4 {top:153px !important;right:-15px;}
+	#pointers div.pl4 {top:153px !important;left:-15px;}
 
 	span label{
 		font-size: 30px;

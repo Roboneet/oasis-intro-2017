@@ -9,6 +9,8 @@
 		<link rel="stylesheet" href="assets/css/scroll.css">
 		<link rel="stylesheet" href="assets/css/popup.css">
 		<link rel="stylesheet" href="assets/css/info.css">
+		<link rel="stylesheet" href="regstyle.css">
+		<link href="horsey.min.css" rel="stylesheet">
 		<style id="keep_at_end"></style>
 		<meta charset="UTF-8">
 	</head>
@@ -35,6 +37,7 @@
 					<a class="animated flipInY" data="about">ABOUT US</a>
 					<a class="animated flipInY" data="sponsors">SPONSORS</a>
 					<a class="animated flipInY" data="contact">CONTACT US</a>
+					<a class="animated flipInY" data="register">REGISTER</a>
 				</nav>
 			</div>
 			<div>
@@ -330,7 +333,87 @@ Oasis ‘17. Bigger than ever.</p>
 						</div>
 					</div>
 				</div>
+				<div class="info" data="register">
+					<div class="cross"></div>
+					<div class="register_here" >
+			<div class="cont1">
+				<!--<div class="close">X</div>-->
+				<div class="cont1-1 animated fadeInDown"> Register </div>
+			</div>
+			<div class="cont2">
+				<form class="register-form animated fadeIn" id="form2" method="POST" onsubmit="return false;">
+             		 <div class="input-field">
+               			 <label>Name</label>
+               			 <input name="name" type="text" placeholder="Name" required="" />
+                     <div class="sub-info">(As to be printed on reward/certificate)</div>
+             		 </div>
+             		 <div class="input-field">
+               			 <label>Gender</label>
+               			 <div class="gender-wrap">
+                 		 	<input name="gender" type="radio" value="M" />
+                 			 <label>Male</label>
+                  			<input name="gender" type="radio" value="F" />
+                  			<label>Female</label>
+               			</div>
+             		 </div>
+             		 <div class="input-field">
+               			 <label>Email</label>
 
+               			 <input name="email" type="email" placeholder="abc@gmail.com" required="" />
+             		 </div>
+             		 <div class="input-field">
+               			 <label>Current City</label>
+               			 <input name="city" type="text" placeholder="City Name" required="" />
+              		</div>
+              		 <div class="input-field">
+               			 <label>College</label>
+               			 <input name="college" type="text" placeholder="College name" required="" id="college" />
+                      <div class="sub-info">(Type only if not found in dropdown list)</div>
+              		</div>
+             		 <div class="input-field">
+             			<label>Phone</label>
+              			<input name="phone" type="text" placeholder="+91-" required="" min="1000000000" max="9999999999"/>
+              		</div>
+                   <div class="input-field">
+                     <label>Are you the head of any cultural society?</label>
+                     <div class="gender-wrap">
+                      <input name="cultural" type="radio" value="Y" />
+                       <label>Yes</label>
+                        <input name="cultural" type="radio" value="N" />
+                        <label>No</label>
+                    </div>
+                 </div>
+            		 <div class="input-field">
+             		 	<label> Year of study</label>
+             		 	<select>
+             		 		<option value="1">1 </option>
+             		 		<option value="2">2 </option>
+             		 		<option value="3">3 </option>
+             		 		<option value="4">4 </option>
+             		 		<option value="5">5 </option>
+             		 		<option value="NA">NA </option>
+             		 	</select>
+             		 </div>
+              		
+             		 <div class="input-field">
+             		 	<label> Select events to register</label>
+             		 	<select>
+             		 		<option value="Rapwars">Rapwars </option>
+             		 		<option value="Rapwars">Rapwars </option>
+             		 		<option value="Rapwars">Rapwars </option>
+             		 	</select>
+             		 </div>
+
+              		<div class="button-field">
+               			 <button  class="register-pay submit animated fadeInUp" >
+               			 	<a href="javascript:void(0)"> APPLY </a> 
+               			 </button>
+             		 </div>
+            		 
+            </form>
+			</div>
+		</div>
+				</div>
 			</section>
 		</section>
 		</div>
@@ -341,7 +424,9 @@ Oasis ‘17. Bigger than ever.</p>
 		<script src="assets/js/pointer.js"></script>
 		<script src="assets/js/navbar.js"></script>
 		<script src="assets/js/move.js"></script>
-		<script src='assets/js/timer.js'></script>>
+		<script src='assets/js/timer.js'></script>
+		<script src="horsey.min.js"></script>
+    <script src="register.js"></script>
 	</body>
 </html>
 

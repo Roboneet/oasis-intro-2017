@@ -48,6 +48,10 @@
 		sponsors: {
 			backgroundColor: 'rgb(255, 233, 237)',
 			color: 'rgb(190, 0 ,0)',
+		},
+		register: {
+			backgroundColor: '#212121',
+			color: '#f3f3f3',
 		}
 	}
 

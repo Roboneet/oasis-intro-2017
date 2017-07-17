@@ -1,7 +1,7 @@
 $(function(){
   a = document.querySelectorAll('nav a');
   v = [];
-  for (i = 0; i < 3; i++) {
+  for (i = 0; i < a.length; i++) {
     v.push(a[i].offsetTop + 0.5*a[i].scrollHeight - 10);
     console.log('.pl'+(i+1)+' {top: '+v[i]+'px;}');
     document.querySelector('#keep_at_end').sheet.insertRule('#pointers div.pl'+(i+1)+' {top: '+v[i]+'px;}',0);
