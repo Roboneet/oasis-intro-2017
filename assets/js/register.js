@@ -2,16 +2,16 @@
 var horseyElement = horsey(document.querySelector('#college'), {
 	source: function(data, done){
 		var items = ['demo', 'pen','apple', 'pinapple','pen'];
-		// $.ajax({
-		// 	url: '',
-		// 	method: 'GET',
-		// 	success: function(data){
-		// 		items = data
-		// 	},
-		// 	error: function(xhr, error_message, error_code){
-		// 		console.log(error_code,error_message)
-		// 	}
-		// })
+		$.ajax({
+			url: '',
+			method: 'GET',
+			success: function(data){
+				items = data
+			},
+			error: function(xhr, error_message, error_code){
+				console.log(error_code,error_message)
+			}
+		})
 		done(null,[{ list :items.filter(item => {
 			return item.indexOf(data.input) !== -1;
 		})}])
@@ -30,7 +30,7 @@ $('.submit').click(function(){
 	var form = $('#form2');
 	var data = form.serializeArray();
 
-	data_json = data.reduce(function(obj, ele){
+	var data_json = data.reduce(function(obj, ele){
 		var [key, value] = [ele.name, ele.value];
 		
 		obj[key] = value;
@@ -55,7 +55,7 @@ $('.submit').click(function(){
 
 	var csrftoken = getCookie('csrftoken');
 
-	data_JSON.csrfmiddlewaretoken = csrftoken;
+	data_json.csrfmiddlewaretoken = csrftoken;
 
 
 	$.ajax({
@@ -70,6 +70,25 @@ $('.submit').click(function(){
 
 function ajax_success(json){
 	console.log(json);
+	var message;
+      if(json.status == 1){
+      message = 'Hi '+json['name'] +'!.' + ' You have entered email:'+ json['email'];
+    }
+      else if(json.status == 2){
+        message = 'Enter a valid phone number.';
+    }
+      else if(json.status == 3){
+        message = 'Enter a valid email address.';
+    }
+    else{
+      message = 'Email already registered';
+    }
+
+    $('.msg p').text(message);
+    $('.msg').fadeIn();
+    setTimeout(function(){
+    	$('.msg').fadeOut();
+    }, 2000)
 }
 
 function ajax_error(xhr, error_message , error_code){
