@@ -198,7 +198,7 @@ nav a:hover {
 	background-size: contain !important;
 	font-size: 30px;
 }
-#facebook, #twitter, #youtube{
+#facebook, #twitter, #youtube, #instagram{
 	font-size: 30px;
 }
 .social:hover {
@@ -207,6 +207,7 @@ nav a:hover {
 #facebook { background: url("../img/facebook.png") no-repeat center; }
 #twitter { background: url("../img/twitter.png") no-repeat center; }
 #youtube { background: url("../img/youtube.png") no-repeat center; }
+#instagram { background: url("../img/instagram.png") no-repeat center; }
 
 .button .uppertext{
 	font-weight:bold;
@@ -294,7 +295,7 @@ nav a:hover {
 		font-size: 2.1em;
 		font-weight: 400;
 	}
-	#facebook, #twitter, #youtube{
+	#facebook, #twitter, #youtube, #instagram{
 		font-size: 50px;
 	}
 

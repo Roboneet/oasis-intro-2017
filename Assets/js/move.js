@@ -55,5 +55,6 @@
       if(navigator.userAgent.toLowerCase().indexOf('firefox') == -1){
         setTransform(newv,newh,timeout);
       }
+
     }
 })();
